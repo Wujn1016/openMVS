@@ -1,0 +1,917 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake:211 (message)"
+      - "CMakeLists.txt:52 (PROJECT)"
+    message: |
+      The system is: Windows - 10.0.22631 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:52 (PROJECT)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      适用于 .NET Framework MSBuild 版本 17.7.2+d6990bcfa
+      生成启动时间为 2024/4/28 10:46:29。
+      
+      节点 1 上的项目“F:\\mcs2\\openMVS\\build\\CMakeFiles\\3.27.0-rc3\\CompilerIdC\\CompilerIdC.vcxproj”(默认目标)。
+      PrepareForBuild:
+        正在创建目录“Debug\\”。
+        正在创建目录“Debug\\CompilerIdC.tlog\\”。
+      InitializeBuildStatus:
+        正在创建“Debug\\CompilerIdC.tlog\\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+        正在对“Debug\\CompilerIdC.tlog\\unsuccessfulbuild”执行 Touch 任务。
+      VcpkgTripletSelection:
+        Using triplet "x64-windows" from "C:\\src\\vcpkg\\installed\\x64-windows\\"
+        Using normalized configuration "Release"
+      VcpkgCheckManifestRoot:
+        The vcpkg manifest was disabled, but we found a manifest file in F:\\mcs2\\openMVS\\. You may want to enable vcpkg manifests in your properties page or pass /p:VcpkgEnableManifest=true to the msbuild invocation.
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\src\\vcpkg\\installed\\x64-windows\\include" /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\\src\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\src\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "C:\\src\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> F:\\mcs2\\openMVS\\build\\CMakeFiles\\3.27.0-rc3\\CompilerIdC\\CompilerIdC.exe
+      AppLocalFromInstalled:
+        pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\src\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "F:\\mcs2\\openMVS\\build\\CMakeFiles\\3.27.0-rc3\\CompilerIdC\\CompilerIdC.exe" "C:\\src\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+        'pwsh.exe' 不是内部或外部命令，也不是可运行的程序
+        或批处理文件。
+        命令“pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\src\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "F:\\mcs2\\openMVS\\build\\CMakeFiles\\3.27.0-rc3\\CompilerIdC\\CompilerIdC.exe" "C:\\src\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"”已退出，代码为 9009。
+        "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\src\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "F:\\mcs2\\openMVS\\build\\CMakeFiles\\3.27.0-rc3\\CompilerIdC\\CompilerIdC.exe" "C:\\src\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        正在删除文件“Debug\\CompilerIdC.tlog\\unsuccessfulbuild”。
+        正在对“Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate”执行 Touch 任务。
+      已完成生成项目“F:\\mcs2\\openMVS\\build\\CMakeFiles\\3.27.0-rc3\\CompilerIdC\\CompilerIdC.vcxproj”(默认目标)的操作。
+      
+      已成功生成。
+          0 个警告
+          0 个错误
+      
+      已用时间 00:00:00.99
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        F:/mcs2/openMVS/build/CMakeFiles/3.27.0-rc3/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:52 (PROJECT)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      适用于 .NET Framework MSBuild 版本 17.7.2+d6990bcfa
+      生成启动时间为 2024/4/28 10:46:30。
+      
+      节点 1 上的项目“F:\\mcs2\\openMVS\\build\\CMakeFiles\\3.27.0-rc3\\CompilerIdCXX\\CompilerIdCXX.vcxproj”(默认目标)。
+      PrepareForBuild:
+        正在创建目录“Debug\\”。
+        正在创建目录“Debug\\CompilerIdCXX.tlog\\”。
+      InitializeBuildStatus:
+        正在创建“Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+        正在对“Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild”执行 Touch 任务。
+      VcpkgTripletSelection:
+        Using triplet "x64-windows" from "C:\\src\\vcpkg\\installed\\x64-windows\\"
+        Using normalized configuration "Release"
+      VcpkgCheckManifestRoot:
+        The vcpkg manifest was disabled, but we found a manifest file in F:\\mcs2\\openMVS\\. You may want to enable vcpkg manifests in your properties page or pass /p:VcpkgEnableManifest=true to the msbuild invocation.
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\src\\vcpkg\\installed\\x64-windows\\include" /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\\src\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\src\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "C:\\src\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> F:\\mcs2\\openMVS\\build\\CMakeFiles\\3.27.0-rc3\\CompilerIdCXX\\CompilerIdCXX.exe
+      AppLocalFromInstalled:
+        pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\src\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "F:\\mcs2\\openMVS\\build\\CMakeFiles\\3.27.0-rc3\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\src\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+        'pwsh.exe' 不是内部或外部命令，也不是可运行的程序
+        或批处理文件。
+        命令“pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\src\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "F:\\mcs2\\openMVS\\build\\CMakeFiles\\3.27.0-rc3\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\src\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"”已退出，代码为 9009。
+        "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\src\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "F:\\mcs2\\openMVS\\build\\CMakeFiles\\3.27.0-rc3\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\src\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        正在删除文件“Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild”。
+        正在对“Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate”执行 Touch 任务。
+      已完成生成项目“F:\\mcs2\\openMVS\\build\\CMakeFiles\\3.27.0-rc3\\CompilerIdCXX\\CompilerIdCXX.vcxproj”(默认目标)的操作。
+      
+      已成功生成。
+          0 个警告
+          0 个错误
+      
+      已用时间 00:00:00.96
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        F:/mcs2/openMVS/build/CMakeFiles/3.27.0-rc3/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:52 (PROJECT)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "F:/mcs2/openMVS/build/CMakeFiles/CMakeScratch/TryCompile-lz7nyo"
+      binary: "F:/mcs2/openMVS/build/CMakeFiles/CMakeScratch/TryCompile-lz7nyo"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'F:/mcs2/openMVS/build/CMakeFiles/CMakeScratch/TryCompile-lz7nyo'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_4212e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        适用于 .NET Framework MSBuild 版本 17.7.2+d6990bcfa
+        生成启动时间为 2024/4/28 10:46:32。
+        
+        节点 1 上的项目“F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lz7nyo\\cmTC_4212e.vcxproj”(默认目标)。
+        PrepareForBuild:
+          正在创建目录“cmTC_4212e.dir\\Debug\\”。
+          正在创建目录“F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lz7nyo\\Debug\\”。
+          正在创建目录“cmTC_4212e.dir\\Debug\\cmTC_4212e.tlog\\”。
+        InitializeBuildStatus:
+          正在创建“cmTC_4212e.dir\\Debug\\cmTC_4212e.tlog\\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+          正在对“cmTC_4212e.dir\\Debug\\cmTC_4212e.tlog\\unsuccessfulbuild”执行 Touch 任务。
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\src\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Release"
+        VcpkgCheckManifestRoot:
+          The vcpkg manifest was disabled, but we found a manifest file in F:\\mcs2\\openMVS\\. You may want to enable vcpkg manifests in your properties page or pass /p:VcpkgEnableManifest=true to the msbuild invocation.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\src\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_4212e.dir\\Debug\\\\" /Fd"cmTC_4212e.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c"
+          用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.37.32822 版
+          CMakeCCompilerABI.c
+          版权所有(C) Microsoft Corporation。保留所有权利。
+          cl /c /I"C:\\src\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_4212e.dir\\Debug\\\\" /Fd"cmTC_4212e.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lz7nyo\\Debug\\cmTC_4212e.exe" /INCREMENTAL /ILK:"cmTC_4212e.dir\\Debug\\cmTC_4212e.ilk" /NOLOGO /LIBPATH:"C:\\src\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\src\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\src\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:/mcs2/openMVS/build/CMakeFiles/CMakeScratch/TryCompile-lz7nyo/Debug/cmTC_4212e.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:/mcs2/openMVS/build/CMakeFiles/CMakeScratch/TryCompile-lz7nyo/Debug/cmTC_4212e.lib" /MACHINE:X64  /machine:x64 cmTC_4212e.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_4212e.vcxproj -> F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lz7nyo\\Debug\\cmTC_4212e.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\src\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lz7nyo\\Debug\\cmTC_4212e.exe" "C:\\src\\vcpkg\\installed\\x64-windows\\bin" "cmTC_4212e.dir\\Debug\\cmTC_4212e.tlog\\cmTC_4212e.write.1u.tlog" "cmTC_4212e.dir\\Debug\\vcpkg.applocal.log"
+          'pwsh.exe' 不是内部或外部命令，也不是可运行的程序
+          或批处理文件。
+          命令“pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\src\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lz7nyo\\Debug\\cmTC_4212e.exe" "C:\\src\\vcpkg\\installed\\x64-windows\\bin" "cmTC_4212e.dir\\Debug\\cmTC_4212e.tlog\\cmTC_4212e.write.1u.tlog" "cmTC_4212e.dir\\Debug\\vcpkg.applocal.log"”已退出，代码为 9009。
+          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\src\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lz7nyo\\Debug\\cmTC_4212e.exe" "C:\\src\\vcpkg\\installed\\x64-windows\\bin" "cmTC_4212e.dir\\Debug\\cmTC_4212e.tlog\\cmTC_4212e.write.1u.tlog" "cmTC_4212e.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          正在删除文件“cmTC_4212e.dir\\Debug\\cmTC_4212e.tlog\\unsuccessfulbuild”。
+          正在对“cmTC_4212e.dir\\Debug\\cmTC_4212e.tlog\\cmTC_4212e.lastbuildstate”执行 Touch 任务。
+        已完成生成项目“F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lz7nyo\\cmTC_4212e.vcxproj”(默认目标)的操作。
+        
+        已成功生成。
+            0 个警告
+            0 个错误
+        
+        已用时间 00:00:00.96
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:52 (PROJECT)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "F:/mcs2/openMVS/build/CMakeFiles/CMakeScratch/TryCompile-9sqjdr"
+      binary: "F:/mcs2/openMVS/build/CMakeFiles/CMakeScratch/TryCompile-9sqjdr"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'F:/mcs2/openMVS/build/CMakeFiles/CMakeScratch/TryCompile-9sqjdr'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_fce26.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        适用于 .NET Framework MSBuild 版本 17.7.2+d6990bcfa
+        生成启动时间为 2024/4/28 10:46:33。
+        
+        节点 1 上的项目“F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9sqjdr\\cmTC_fce26.vcxproj”(默认目标)。
+        PrepareForBuild:
+          正在创建目录“cmTC_fce26.dir\\Debug\\”。
+          正在创建目录“F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9sqjdr\\Debug\\”。
+          正在创建目录“cmTC_fce26.dir\\Debug\\cmTC_fce26.tlog\\”。
+        InitializeBuildStatus:
+          正在创建“cmTC_fce26.dir\\Debug\\cmTC_fce26.tlog\\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+          正在对“cmTC_fce26.dir\\Debug\\cmTC_fce26.tlog\\unsuccessfulbuild”执行 Touch 任务。
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\src\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Release"
+        VcpkgCheckManifestRoot:
+          The vcpkg manifest was disabled, but we found a manifest file in F:\\mcs2\\openMVS\\. You may want to enable vcpkg manifests in your properties page or pass /p:VcpkgEnableManifest=true to the msbuild invocation.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\src\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_fce26.dir\\Debug\\\\" /Fd"cmTC_fce26.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
+          用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.37.32822 版
+          版权所有(C) Microsoft Corporation。保留所有权利。
+          CMakeCXXCompilerABI.cpp
+          cl /c /I"C:\\src\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_fce26.dir\\Debug\\\\" /Fd"cmTC_fce26.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9sqjdr\\Debug\\cmTC_fce26.exe" /INCREMENTAL /ILK:"cmTC_fce26.dir\\Debug\\cmTC_fce26.ilk" /NOLOGO /LIBPATH:"C:\\src\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\src\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\src\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:/mcs2/openMVS/build/CMakeFiles/CMakeScratch/TryCompile-9sqjdr/Debug/cmTC_fce26.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:/mcs2/openMVS/build/CMakeFiles/CMakeScratch/TryCompile-9sqjdr/Debug/cmTC_fce26.lib" /MACHINE:X64  /machine:x64 cmTC_fce26.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_fce26.vcxproj -> F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9sqjdr\\Debug\\cmTC_fce26.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\src\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9sqjdr\\Debug\\cmTC_fce26.exe" "C:\\src\\vcpkg\\installed\\x64-windows\\bin" "cmTC_fce26.dir\\Debug\\cmTC_fce26.tlog\\cmTC_fce26.write.1u.tlog" "cmTC_fce26.dir\\Debug\\vcpkg.applocal.log"
+          'pwsh.exe' 不是内部或外部命令，也不是可运行的程序
+          或批处理文件。
+          命令“pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\src\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9sqjdr\\Debug\\cmTC_fce26.exe" "C:\\src\\vcpkg\\installed\\x64-windows\\bin" "cmTC_fce26.dir\\Debug\\cmTC_fce26.tlog\\cmTC_fce26.write.1u.tlog" "cmTC_fce26.dir\\Debug\\vcpkg.applocal.log"”已退出，代码为 9009。
+          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\src\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9sqjdr\\Debug\\cmTC_fce26.exe" "C:\\src\\vcpkg\\installed\\x64-windows\\bin" "cmTC_fce26.dir\\Debug\\cmTC_fce26.tlog\\cmTC_fce26.write.1u.tlog" "cmTC_fce26.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          正在删除文件“cmTC_fce26.dir\\Debug\\cmTC_fce26.tlog\\unsuccessfulbuild”。
+          正在对“cmTC_fce26.dir\\Debug\\cmTC_fce26.tlog\\cmTC_fce26.lastbuildstate”执行 Touch 任务。
+        已完成生成项目“F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9sqjdr\\cmTC_fce26.vcxproj”(默认目标)的操作。
+        
+        已成功生成。
+            0 个警告
+            0 个错误
+        
+        已用时间 00:00:00.98
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "build/Utils.cmake:707 (CHECK_INCLUDE_FILE)"
+      - "build/Utils.cmake:752 (optimize_default_compiler_settings)"
+      - "CMakeLists.txt:70 (ConfigCompilerAndLinker)"
+    checks:
+      - "Looking for inttypes.h"
+    directories:
+      source: "F:/mcs2/openMVS/build/CMakeFiles/CMakeScratch/TryCompile-7ge2nj"
+      binary: "F:/mcs2/openMVS/build/CMakeFiles/CMakeScratch/TryCompile-7ge2nj"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3  /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /Gy /bigobj /Oi /Zm170 /Zc:__cplusplus "
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1 "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64 "
+    buildResult:
+      variable: "HAVE_INTTYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: 'F:/mcs2/openMVS/build/CMakeFiles/CMakeScratch/TryCompile-7ge2nj'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_3d121.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        适用于 .NET Framework MSBuild 版本 17.7.2+d6990bcfa
+        生成启动时间为 2024/4/28 10:46:34。
+        
+        节点 1 上的项目“F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7ge2nj\\cmTC_3d121.vcxproj”(默认目标)。
+        PrepareForBuild:
+          正在创建目录“cmTC_3d121.dir\\Debug\\”。
+          正在创建目录“F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7ge2nj\\Debug\\”。
+          正在创建目录“cmTC_3d121.dir\\Debug\\cmTC_3d121.tlog\\”。
+        InitializeBuildStatus:
+          正在创建“cmTC_3d121.dir\\Debug\\cmTC_3d121.tlog\\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+          正在对“cmTC_3d121.dir\\Debug\\cmTC_3d121.tlog\\unsuccessfulbuild”执行 Touch 任务。
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\src\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Release"
+        VcpkgCheckManifestRoot:
+          The vcpkg manifest was disabled, but we found a manifest file in F:\\mcs2\\openMVS\\. You may want to enable vcpkg manifests in your properties page or pass /p:VcpkgEnableManifest=true to the msbuild invocation.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\src\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3d121.dir\\Debug\\\\" /Fd"cmTC_3d121.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj /Zm170 /Zc:__cplusplus "F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7ge2nj\\CheckIncludeFile.c"
+          用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.37.32822 版
+          CheckIncludeFile.c
+          版权所有(C) Microsoft Corporation。保留所有权利。
+          cl /c /I"C:\\src\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3d121.dir\\Debug\\\\" /Fd"cmTC_3d121.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj /Zm170 /Zc:__cplusplus "F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7ge2nj\\CheckIncludeFile.c"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7ge2nj\\Debug\\cmTC_3d121.exe" /INCREMENTAL /ILK:"cmTC_3d121.dir\\Debug\\cmTC_3d121.ilk" /NOLOGO /LIBPATH:"C:\\src\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\src\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\src\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:/mcs2/openMVS/build/CMakeFiles/CMakeScratch/TryCompile-7ge2nj/Debug/cmTC_3d121.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:/mcs2/openMVS/build/CMakeFiles/CMakeScratch/TryCompile-7ge2nj/Debug/cmTC_3d121.lib" /MACHINE:X64  /machine:x64 cmTC_3d121.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_3d121.vcxproj -> F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7ge2nj\\Debug\\cmTC_3d121.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\src\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7ge2nj\\Debug\\cmTC_3d121.exe" "C:\\src\\vcpkg\\installed\\x64-windows\\bin" "cmTC_3d121.dir\\Debug\\cmTC_3d121.tlog\\cmTC_3d121.write.1u.tlog" "cmTC_3d121.dir\\Debug\\vcpkg.applocal.log"
+          'pwsh.exe' 不是内部或外部命令，也不是可运行的程序
+          或批处理文件。
+          命令“pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\src\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7ge2nj\\Debug\\cmTC_3d121.exe" "C:\\src\\vcpkg\\installed\\x64-windows\\bin" "cmTC_3d121.dir\\Debug\\cmTC_3d121.tlog\\cmTC_3d121.write.1u.tlog" "cmTC_3d121.dir\\Debug\\vcpkg.applocal.log"”已退出，代码为 9009。
+          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\src\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7ge2nj\\Debug\\cmTC_3d121.exe" "C:\\src\\vcpkg\\installed\\x64-windows\\bin" "cmTC_3d121.dir\\Debug\\cmTC_3d121.tlog\\cmTC_3d121.write.1u.tlog" "cmTC_3d121.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          正在删除文件“cmTC_3d121.dir\\Debug\\cmTC_3d121.tlog\\unsuccessfulbuild”。
+          正在对“cmTC_3d121.dir\\Debug\\cmTC_3d121.tlog\\cmTC_3d121.lastbuildstate”执行 Touch 任务。
+        已完成生成项目“F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7ge2nj\\cmTC_3d121.vcxproj”(默认目标)的操作。
+        
+        已成功生成。
+            0 个警告
+            0 个错误
+        
+        已用时间 00:00:00.97
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/FindOpenMP.cmake:219 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/FindOpenMP.cmake:483 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:82 (FIND_PACKAGE)"
+    description: "Detecting C OpenMP compiler info"
+    directories:
+      source: "F:/mcs2/openMVS/build/CMakeFiles/CMakeScratch/TryCompile-ox4fw1"
+      binary: "F:/mcs2/openMVS/build/CMakeFiles/CMakeScratch/TryCompile-ox4fw1"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3  /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /Gy /bigobj /Oi /Zm170 /Zc:__cplusplus "
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1 "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64 "
+      CMAKE_MODULE_PATH: "F:/mcs2/openMVS/build/Modules"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_C_openmp"
+      cached: true
+      stdout: |
+        Change Dir: 'F:/mcs2/openMVS/build/CMakeFiles/CMakeScratch/TryCompile-ox4fw1'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_1e4e2.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        适用于 .NET Framework MSBuild 版本 17.7.2+d6990bcfa
+        生成启动时间为 2024/4/28 10:46:35。
+        
+        节点 1 上的项目“F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ox4fw1\\cmTC_1e4e2.vcxproj”(默认目标)。
+        PrepareForBuild:
+          正在创建目录“cmTC_1e4e2.dir\\Debug\\”。
+          正在创建目录“F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ox4fw1\\Debug\\”。
+          正在创建目录“cmTC_1e4e2.dir\\Debug\\cmTC_1e4e2.tlog\\”。
+        InitializeBuildStatus:
+          正在创建“cmTC_1e4e2.dir\\Debug\\cmTC_1e4e2.tlog\\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+          正在对“cmTC_1e4e2.dir\\Debug\\cmTC_1e4e2.tlog\\unsuccessfulbuild”执行 Touch 任务。
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\src\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Release"
+        VcpkgCheckManifestRoot:
+          The vcpkg manifest was disabled, but we found a manifest file in F:\\mcs2\\openMVS\\. You may want to enable vcpkg manifests in your properties page or pass /p:VcpkgEnableManifest=true to the msbuild invocation.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\src\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /openmp /Fo"cmTC_1e4e2.dir\\Debug\\\\" /Fd"cmTC_1e4e2.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj /Zm170 /Zc:__cplusplus "F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ox4fw1\\OpenMPTryFlag.c"
+          用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.37.32822 版
+          OpenMPTryFlag.c
+          版权所有(C) Microsoft Corporation。保留所有权利。
+          cl /c /I"C:\\src\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /openmp /Fo"cmTC_1e4e2.dir\\Debug\\\\" /Fd"cmTC_1e4e2.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj /Zm170 /Zc:__cplusplus "F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ox4fw1\\OpenMPTryFlag.c"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ox4fw1\\Debug\\cmTC_1e4e2.exe" /INCREMENTAL /ILK:"cmTC_1e4e2.dir\\Debug\\cmTC_1e4e2.ilk" /NOLOGO /LIBPATH:"C:\\src\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\src\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\src\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:/mcs2/openMVS/build/CMakeFiles/CMakeScratch/TryCompile-ox4fw1/Debug/cmTC_1e4e2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:/mcs2/openMVS/build/CMakeFiles/CMakeScratch/TryCompile-ox4fw1/Debug/cmTC_1e4e2.lib" /MACHINE:X64  /machine:x64 cmTC_1e4e2.dir\\Debug\\OpenMPTryFlag.obj
+          cmTC_1e4e2.vcxproj -> F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ox4fw1\\Debug\\cmTC_1e4e2.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\src\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ox4fw1\\Debug\\cmTC_1e4e2.exe" "C:\\src\\vcpkg\\installed\\x64-windows\\bin" "cmTC_1e4e2.dir\\Debug\\cmTC_1e4e2.tlog\\cmTC_1e4e2.write.1u.tlog" "cmTC_1e4e2.dir\\Debug\\vcpkg.applocal.log"
+          'pwsh.exe' 不是内部或外部命令，也不是可运行的程序
+          或批处理文件。
+          命令“pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\src\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ox4fw1\\Debug\\cmTC_1e4e2.exe" "C:\\src\\vcpkg\\installed\\x64-windows\\bin" "cmTC_1e4e2.dir\\Debug\\cmTC_1e4e2.tlog\\cmTC_1e4e2.write.1u.tlog" "cmTC_1e4e2.dir\\Debug\\vcpkg.applocal.log"”已退出，代码为 9009。
+          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\src\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ox4fw1\\Debug\\cmTC_1e4e2.exe" "C:\\src\\vcpkg\\installed\\x64-windows\\bin" "cmTC_1e4e2.dir\\Debug\\cmTC_1e4e2.tlog\\cmTC_1e4e2.write.1u.tlog" "cmTC_1e4e2.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          正在删除文件“cmTC_1e4e2.dir\\Debug\\cmTC_1e4e2.tlog\\unsuccessfulbuild”。
+          正在对“cmTC_1e4e2.dir\\Debug\\cmTC_1e4e2.tlog\\cmTC_1e4e2.lastbuildstate”执行 Touch 任务。
+        已完成生成项目“F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ox4fw1\\cmTC_1e4e2.vcxproj”(默认目标)的操作。
+        
+        已成功生成。
+            0 个警告
+            0 个错误
+        
+        已用时间 00:00:00.96
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/FindOpenMP.cmake:219 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/FindOpenMP.cmake:483 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:82 (FIND_PACKAGE)"
+    description: "Detecting CXX OpenMP compiler info"
+    directories:
+      source: "F:/mcs2/openMVS/build/CMakeFiles/CMakeScratch/TryCompile-3y21bc"
+      binary: "F:/mcs2/openMVS/build/CMakeFiles/CMakeScratch/TryCompile-3y21bc"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc  /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /Gy /bigobj /Oi /Zm170 /Zc:__cplusplus  /wd4231 /wd4251 /wd4308 /wd4396 /wd4503 /wd4661 /wd4996"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1 "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64 "
+      CMAKE_MODULE_PATH: "F:/mcs2/openMVS/build/Modules"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CXX_openmp"
+      cached: true
+      stdout: |
+        Change Dir: 'F:/mcs2/openMVS/build/CMakeFiles/CMakeScratch/TryCompile-3y21bc'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_4ac48.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        适用于 .NET Framework MSBuild 版本 17.7.2+d6990bcfa
+        生成启动时间为 2024/4/28 10:46:37。
+        
+        节点 1 上的项目“F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3y21bc\\cmTC_4ac48.vcxproj”(默认目标)。
+        PrepareForBuild:
+          正在创建目录“cmTC_4ac48.dir\\Debug\\”。
+          正在创建目录“F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3y21bc\\Debug\\”。
+          正在创建目录“cmTC_4ac48.dir\\Debug\\cmTC_4ac48.tlog\\”。
+        InitializeBuildStatus:
+          正在创建“cmTC_4ac48.dir\\Debug\\cmTC_4ac48.tlog\\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+          正在对“cmTC_4ac48.dir\\Debug\\cmTC_4ac48.tlog\\unsuccessfulbuild”执行 Touch 任务。
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\src\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Release"
+        VcpkgCheckManifestRoot:
+          The vcpkg manifest was disabled, but we found a manifest file in F:\\mcs2\\openMVS\\. You may want to enable vcpkg manifests in your properties page or pass /p:VcpkgEnableManifest=true to the msbuild invocation.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\src\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /openmp /std:c++20 /Fo"cmTC_4ac48.dir\\Debug\\\\" /Fd"cmTC_4ac48.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /wd4231 /wd4251 /wd4308 /wd4396 /wd4503 /wd4661 /wd4996 /errorReport:queue  /bigobj /Zm170 /Zc:__cplusplus "F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3y21bc\\OpenMPTryFlag.cpp"
+          用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.37.32822 版
+          OpenMPTryFlag.cpp
+          版权所有(C) Microsoft Corporation。保留所有权利。
+          cl /c /I"C:\\src\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /openmp /std:c++20 /Fo"cmTC_4ac48.dir\\Debug\\\\" /Fd"cmTC_4ac48.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /wd4231 /wd4251 /wd4308 /wd4396 /wd4503 /wd4661 /wd4996 /errorReport:queue  /bigobj /Zm170 /Zc:__cplusplus "F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3y21bc\\OpenMPTryFlag.cpp"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3y21bc\\Debug\\cmTC_4ac48.exe" /INCREMENTAL /ILK:"cmTC_4ac48.dir\\Debug\\cmTC_4ac48.ilk" /NOLOGO /LIBPATH:"C:\\src\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\src\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\src\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:/mcs2/openMVS/build/CMakeFiles/CMakeScratch/TryCompile-3y21bc/Debug/cmTC_4ac48.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:/mcs2/openMVS/build/CMakeFiles/CMakeScratch/TryCompile-3y21bc/Debug/cmTC_4ac48.lib" /MACHINE:X64  /machine:x64 cmTC_4ac48.dir\\Debug\\OpenMPTryFlag.obj
+          cmTC_4ac48.vcxproj -> F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3y21bc\\Debug\\cmTC_4ac48.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\src\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3y21bc\\Debug\\cmTC_4ac48.exe" "C:\\src\\vcpkg\\installed\\x64-windows\\bin" "cmTC_4ac48.dir\\Debug\\cmTC_4ac48.tlog\\cmTC_4ac48.write.1u.tlog" "cmTC_4ac48.dir\\Debug\\vcpkg.applocal.log"
+          'pwsh.exe' 不是内部或外部命令，也不是可运行的程序
+          或批处理文件。
+          命令“pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\src\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3y21bc\\Debug\\cmTC_4ac48.exe" "C:\\src\\vcpkg\\installed\\x64-windows\\bin" "cmTC_4ac48.dir\\Debug\\cmTC_4ac48.tlog\\cmTC_4ac48.write.1u.tlog" "cmTC_4ac48.dir\\Debug\\vcpkg.applocal.log"”已退出，代码为 9009。
+          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\src\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3y21bc\\Debug\\cmTC_4ac48.exe" "C:\\src\\vcpkg\\installed\\x64-windows\\bin" "cmTC_4ac48.dir\\Debug\\cmTC_4ac48.tlog\\cmTC_4ac48.write.1u.tlog" "cmTC_4ac48.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          正在删除文件“cmTC_4ac48.dir\\Debug\\cmTC_4ac48.tlog\\unsuccessfulbuild”。
+          正在对“cmTC_4ac48.dir\\Debug\\cmTC_4ac48.tlog\\cmTC_4ac48.lastbuildstate”执行 Touch 任务。
+        已完成生成项目“F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3y21bc\\cmTC_4ac48.vcxproj”(默认目标)的操作。
+        
+        已成功生成。
+            0 个警告
+            0 个错误
+        
+        已用时间 00:00:00.97
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/FindOpenMP.cmake:419 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/FindOpenMP.cmake:557 (_OPENMP_GET_SPEC_DATE)"
+      - "CMakeLists.txt:82 (FIND_PACKAGE)"
+    description: "Detecting C OpenMP version"
+    directories:
+      source: "F:/mcs2/openMVS/build/CMakeFiles/CMakeScratch/TryCompile-e871ko"
+      binary: "F:/mcs2/openMVS/build/CMakeFiles/CMakeScratch/TryCompile-e871ko"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3  /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /Gy /bigobj /Oi /Zm170 /Zc:__cplusplus "
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1 "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64 "
+      CMAKE_MODULE_PATH: "F:/mcs2/openMVS/build/Modules"
+    buildResult:
+      variable: "OpenMP_SPECTEST_C_"
+      cached: true
+      stdout: |
+        Change Dir: 'F:/mcs2/openMVS/build/CMakeFiles/CMakeScratch/TryCompile-e871ko'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_877e9.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        适用于 .NET Framework MSBuild 版本 17.7.2+d6990bcfa
+        生成启动时间为 2024/4/28 10:46:38。
+        
+        节点 1 上的项目“F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e871ko\\cmTC_877e9.vcxproj”(默认目标)。
+        PrepareForBuild:
+          正在创建目录“cmTC_877e9.dir\\Debug\\”。
+          正在创建目录“F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e871ko\\Debug\\”。
+          正在创建目录“cmTC_877e9.dir\\Debug\\cmTC_877e9.tlog\\”。
+        InitializeBuildStatus:
+          正在创建“cmTC_877e9.dir\\Debug\\cmTC_877e9.tlog\\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+          正在对“cmTC_877e9.dir\\Debug\\cmTC_877e9.tlog\\unsuccessfulbuild”执行 Touch 任务。
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\src\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Release"
+        VcpkgCheckManifestRoot:
+          The vcpkg manifest was disabled, but we found a manifest file in F:\\mcs2\\openMVS\\. You may want to enable vcpkg manifests in your properties page or pass /p:VcpkgEnableManifest=true to the msbuild invocation.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\src\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /openmp /Fo"cmTC_877e9.dir\\Debug\\\\" /Fd"cmTC_877e9.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj /Zm170 /Zc:__cplusplus "F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e871ko\\OpenMPCheckVersion.c"
+          用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.37.32822 版
+          OpenMPCheckVersion.c
+          版权所有(C) Microsoft Corporation。保留所有权利。
+          cl /c /I"C:\\src\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /openmp /Fo"cmTC_877e9.dir\\Debug\\\\" /Fd"cmTC_877e9.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj /Zm170 /Zc:__cplusplus "F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e871ko\\OpenMPCheckVersion.c"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e871ko\\Debug\\cmTC_877e9.exe" /INCREMENTAL /ILK:"cmTC_877e9.dir\\Debug\\cmTC_877e9.ilk" /NOLOGO /LIBPATH:"C:\\src\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\src\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\src\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:/mcs2/openMVS/build/CMakeFiles/CMakeScratch/TryCompile-e871ko/Debug/cmTC_877e9.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:/mcs2/openMVS/build/CMakeFiles/CMakeScratch/TryCompile-e871ko/Debug/cmTC_877e9.lib" /MACHINE:X64  /machine:x64 cmTC_877e9.dir\\Debug\\OpenMPCheckVersion.obj
+          cmTC_877e9.vcxproj -> F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e871ko\\Debug\\cmTC_877e9.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\src\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e871ko\\Debug\\cmTC_877e9.exe" "C:\\src\\vcpkg\\installed\\x64-windows\\bin" "cmTC_877e9.dir\\Debug\\cmTC_877e9.tlog\\cmTC_877e9.write.1u.tlog" "cmTC_877e9.dir\\Debug\\vcpkg.applocal.log"
+          'pwsh.exe' 不是内部或外部命令，也不是可运行的程序
+          或批处理文件。
+          命令“pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\src\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e871ko\\Debug\\cmTC_877e9.exe" "C:\\src\\vcpkg\\installed\\x64-windows\\bin" "cmTC_877e9.dir\\Debug\\cmTC_877e9.tlog\\cmTC_877e9.write.1u.tlog" "cmTC_877e9.dir\\Debug\\vcpkg.applocal.log"”已退出，代码为 9009。
+          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\src\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e871ko\\Debug\\cmTC_877e9.exe" "C:\\src\\vcpkg\\installed\\x64-windows\\bin" "cmTC_877e9.dir\\Debug\\cmTC_877e9.tlog\\cmTC_877e9.write.1u.tlog" "cmTC_877e9.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          正在删除文件“cmTC_877e9.dir\\Debug\\cmTC_877e9.tlog\\unsuccessfulbuild”。
+          正在对“cmTC_877e9.dir\\Debug\\cmTC_877e9.tlog\\cmTC_877e9.lastbuildstate”执行 Touch 任务。
+        已完成生成项目“F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e871ko\\cmTC_877e9.vcxproj”(默认目标)的操作。
+        
+        已成功生成。
+            0 个警告
+            0 个错误
+        
+        已用时间 00:00:00.98
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/FindOpenMP.cmake:419 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/FindOpenMP.cmake:557 (_OPENMP_GET_SPEC_DATE)"
+      - "CMakeLists.txt:82 (FIND_PACKAGE)"
+    description: "Detecting CXX OpenMP version"
+    directories:
+      source: "F:/mcs2/openMVS/build/CMakeFiles/CMakeScratch/TryCompile-prtwaz"
+      binary: "F:/mcs2/openMVS/build/CMakeFiles/CMakeScratch/TryCompile-prtwaz"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc  /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /Gy /bigobj /Oi /Zm170 /Zc:__cplusplus  /wd4231 /wd4251 /wd4308 /wd4396 /wd4503 /wd4661 /wd4996"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1 "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64 "
+      CMAKE_MODULE_PATH: "F:/mcs2/openMVS/build/Modules"
+    buildResult:
+      variable: "OpenMP_SPECTEST_CXX_"
+      cached: true
+      stdout: |
+        Change Dir: 'F:/mcs2/openMVS/build/CMakeFiles/CMakeScratch/TryCompile-prtwaz'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_95c99.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        适用于 .NET Framework MSBuild 版本 17.7.2+d6990bcfa
+        生成启动时间为 2024/4/28 10:46:39。
+        
+        节点 1 上的项目“F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-prtwaz\\cmTC_95c99.vcxproj”(默认目标)。
+        PrepareForBuild:
+          正在创建目录“cmTC_95c99.dir\\Debug\\”。
+          正在创建目录“F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-prtwaz\\Debug\\”。
+          正在创建目录“cmTC_95c99.dir\\Debug\\cmTC_95c99.tlog\\”。
+        InitializeBuildStatus:
+          正在创建“cmTC_95c99.dir\\Debug\\cmTC_95c99.tlog\\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+          正在对“cmTC_95c99.dir\\Debug\\cmTC_95c99.tlog\\unsuccessfulbuild”执行 Touch 任务。
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\src\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Release"
+        VcpkgCheckManifestRoot:
+          The vcpkg manifest was disabled, but we found a manifest file in F:\\mcs2\\openMVS\\. You may want to enable vcpkg manifests in your properties page or pass /p:VcpkgEnableManifest=true to the msbuild invocation.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\src\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /openmp /std:c++20 /Fo"cmTC_95c99.dir\\Debug\\\\" /Fd"cmTC_95c99.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /wd4231 /wd4251 /wd4308 /wd4396 /wd4503 /wd4661 /wd4996 /errorReport:queue  /bigobj /Zm170 /Zc:__cplusplus "F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-prtwaz\\OpenMPCheckVersion.cpp"
+          用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.37.32822 版
+          OpenMPCheckVersion.cpp
+          版权所有(C) Microsoft Corporation。保留所有权利。
+          cl /c /I"C:\\src\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /openmp /std:c++20 /Fo"cmTC_95c99.dir\\Debug\\\\" /Fd"cmTC_95c99.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /wd4231 /wd4251 /wd4308 /wd4396 /wd4503 /wd4661 /wd4996 /errorReport:queue  /bigobj /Zm170 /Zc:__cplusplus "F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-prtwaz\\OpenMPCheckVersion.cpp"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-prtwaz\\Debug\\cmTC_95c99.exe" /INCREMENTAL /ILK:"cmTC_95c99.dir\\Debug\\cmTC_95c99.ilk" /NOLOGO /LIBPATH:"C:\\src\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\src\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\src\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:/mcs2/openMVS/build/CMakeFiles/CMakeScratch/TryCompile-prtwaz/Debug/cmTC_95c99.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:/mcs2/openMVS/build/CMakeFiles/CMakeScratch/TryCompile-prtwaz/Debug/cmTC_95c99.lib" /MACHINE:X64  /machine:x64 cmTC_95c99.dir\\Debug\\OpenMPCheckVersion.obj
+          cmTC_95c99.vcxproj -> F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-prtwaz\\Debug\\cmTC_95c99.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\src\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-prtwaz\\Debug\\cmTC_95c99.exe" "C:\\src\\vcpkg\\installed\\x64-windows\\bin" "cmTC_95c99.dir\\Debug\\cmTC_95c99.tlog\\cmTC_95c99.write.1u.tlog" "cmTC_95c99.dir\\Debug\\vcpkg.applocal.log"
+          'pwsh.exe' 不是内部或外部命令，也不是可运行的程序
+          或批处理文件。
+          命令“pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\src\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-prtwaz\\Debug\\cmTC_95c99.exe" "C:\\src\\vcpkg\\installed\\x64-windows\\bin" "cmTC_95c99.dir\\Debug\\cmTC_95c99.tlog\\cmTC_95c99.write.1u.tlog" "cmTC_95c99.dir\\Debug\\vcpkg.applocal.log"”已退出，代码为 9009。
+          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\src\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-prtwaz\\Debug\\cmTC_95c99.exe" "C:\\src\\vcpkg\\installed\\x64-windows\\bin" "cmTC_95c99.dir\\Debug\\cmTC_95c99.tlog\\cmTC_95c99.write.1u.tlog" "cmTC_95c99.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          正在删除文件“cmTC_95c99.dir\\Debug\\cmTC_95c99.tlog\\unsuccessfulbuild”。
+          正在对“cmTC_95c99.dir\\Debug\\cmTC_95c99.tlog\\cmTC_95c99.lastbuildstate”执行 Touch 任务。
+        已完成生成项目“F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-prtwaz\\cmTC_95c99.vcxproj”(默认目标)的操作。
+        
+        已成功生成。
+            0 个警告
+            0 个错误
+        
+        已用时间 00:00:01.00
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:53 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCUDACompiler.cmake:307 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:114 (ENABLE_LANGUAGE)"
+    message: |
+      Compiling the CUDA compiler identification source file "CMakeCUDACompilerId.cu" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags: --keep;--keep-dir;tmp -v
+      
+      The output was:
+      0
+      适用于 .NET Framework MSBuild 版本 17.7.2+d6990bcfa
+      生成启动时间为 2024/4/28 10:46:42。
+      
+      节点 1 上的项目“F:\\mcs2\\openMVS\\build\\CMakeFiles\\3.27.0-rc3\\CompilerIdCUDA\\CompilerIdCUDA.vcxproj”(默认目标)。
+      PrepareForBuild:
+        正在创建目录“Debug\\”。
+        正在创建目录“Debug\\CompilerIdCUDA.tlog\\”。
+      InitializeBuildStatus:
+        正在创建“Debug\\CompilerIdCUDA.tlog\\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+        正在对“Debug\\CompilerIdCUDA.tlog\\unsuccessfulbuild”执行 Touch 任务。
+      AddCudaCompileDeps:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /D__CUDACC_VER_MAJOR__=11 /D__CUDACC_VER_MINOR__=7 /D_MBCS /I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.7\\include" /IC:\\src\\vcpkg\\installed\\x64-windows\\include /I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.7\\bin" /I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.7\\include" /I. /FIcuda_runtime.h /c F:\\mcs2\\openMVS\\build\\CMakeFiles\\3.27.0-rc3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu 
+      项目“F:\\mcs2\\openMVS\\build\\CMakeFiles\\3.27.0-rc3\\CompilerIdCUDA\\CompilerIdCUDA.vcxproj”(1)正在节点 1 上生成“F:\\mcs2\\openMVS\\build\\CMakeFiles\\3.27.0-rc3\\CompilerIdCUDA\\CompilerIdCUDA.vcxproj”(1:2) (CudaBuildCore 个目标)。
+      CudaBuildCore:
+        Compiling CUDA source file CMakeCUDACompilerId.cu...
+        正在创建目录“F:\\mcs2\\openMVS\\build\\CMakeFiles\\3.27.0-rc3\\CompilerIdCUDA\\x64\\Debug”。
+        cmd.exe /C "C:\\Users\\adm\\AppData\\Local\\Temp\\tmp5bad6c4b96a548c39ecc89fc0dab1e77.cmd"
+        "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.7\\bin\\nvcc.exe" -gencode=arch=compute_52,code=\\"sm_52,compute_52\\" --use-local-env -ccbin "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64" -x cu   -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.7\\include" -I"C:\\src\\vcpkg\\installed\\x64-windows\\include" -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.7\\include"  -G   --keep-dir x64\\Debug  -maxrregcount=0  --machine 64 --compile -cudart static -v -g  -D_MBCS -Xcompiler "/EHsc /W0 /nologo /Od /FdDebug\\vc143.pdb /FS /Zi /RTC1 /MDd " -o F:\\mcs2\\openMVS\\build\\CMakeFiles\\3.27.0-rc3\\CompilerIdCUDA\\x64\\Debug\\CMakeCUDACompilerId.cu.obj "F:\\mcs2\\openMVS\\build\\CMakeFiles\\3.27.0-rc3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu"
+        
+        F:\\mcs2\\openMVS\\build\\CMakeFiles\\3.27.0-rc3\\CompilerIdCUDA>"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.7\\bin\\nvcc.exe" -gencode=arch=compute_52,code=\\"sm_52,compute_52\\" --use-local-env -ccbin "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64" -x cu   -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.7\\include" -I"C:\\src\\vcpkg\\installed\\x64-windows\\include" -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.7\\include"  -G   --keep-dir x64\\Debug  -maxrregcount=0  --machine 64 --compile -cudart static -v -g  -D_MBCS -Xcompiler "/EHsc /W0 /nologo /Od /FdDebug\\vc143.pdb /FS /Zi /RTC1 /MDd " -o F:\\mcs2\\openMVS\\build\\CMakeFiles\\3.27.0-rc3\\CompilerIdCUDA\\x64\\Debug\\CMakeCUDACompilerId.cu.obj "F:\\mcs2\\openMVS\\build\\CMakeFiles\\3.27.0-rc3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" 
+        #$ _NVVM_BRANCH_=nvvm
+        #$ _SPACE_= 
+        #$ _CUDART_=cudart
+        #$ _HERE_=C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.7\\bin
+        #$ _THERE_=C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.7\\bin
+        #$ _TARGET_SIZE_=
+        #$ _TARGET_DIR_=
+        #$ _TARGET_SIZE_=64
+        #$ _WIN_PLATFORM_=x64
+        #$ TOP=C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.7\\bin/..
+        #$ NVVMIR_LIBRARY_DIR=C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.7\\bin/../nvvm/libdevice
+        #$ PATH=C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.7\\bin/../nvvm/bin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.7\\bin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.7\\bin/../lib;E:\\anaconda3\\condabin;C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64;C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.22621.0\\x64;;C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v10.0A\\bin\\NETFX 4.8 Tools\\x64;C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.22621.0\\x86;;C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v10.0A\\bin\\NETFX 4.8 Tools;C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\tools;C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\ide;C:\\Program Files (x86)\\HTML Help Workshop;;C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64;C:\\WINDOWS\\Microsoft.NET\\Framework64\\v4.0.30319\\;C:\\WINDOWS\\Microsoft.NET\\Framework\\v4.0.30319\\;C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin;C:\\WINDOWS\\Microsoft.NET\\Framework\\v4.0.30319\\;;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.7\\bin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.7\\libnvvp;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\dotnet\\;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.1\\lib\\x64;C:\\ProgramData\\NVIDIA Corporation\\CUDA Samples\\v11.1\\bin\\win64;C:\\ProgramData\\NVIDIA Corporation\\CUDA Samples\\v11.1\\common\\lib\\x64;D:\\Matlab\\runtime\\win64;D:\\Matlab\\bin;D:\\Matlab\\polyspace\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;E:\\libpng\\bin;E:\\IntelSWTools\\compilers_and_libraries_2018.3.210\\windows\\redist\\intel64_win\\compiler;C:\\Program Files\\TortoiseGit\\bin;C:\\Users\\admin\\anaconda3\\Scripts;E:\\mingw64\\bin;C:\\Program Files\\CMake\\bin;C:\\Up3D\\UPStudio;C:\\Up3D\\Scanner;C:\\Up3D\\Scanner5.0;F:\\CODE\\lib\\Bin\\Release.x64;C:\\UP3D\\Intraoral;C:\\Users\\adm\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Git\\cmd;E:\\vs2015\\VC\\bin\\amd64;E:\\vs2015\\VC\\include;E:\\anaconda3;E:\\anaconda3\\Scripts;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;E:\\3rd_party\\thirdparty_path\\opencv_4.4.0\\bin;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin;D:\\Qt\\Qt5.2.0\\5.2.0\\msvc2012_64\\bin;E:\\3rd_party\\pcl1131\\3rdParty\\Boost\\lib;E:\\3rd_party\\Ceres\\bin;E:\\3rd_party\\thirdparty_path\\lapack_windows\\x64;C:\\Program Files\\NVIDIA Corporation\\Nsight Compute 2022.2.0\\;E:\\3rd_party\\gflags\\bin;E:\\3rd_party\\glog\\bin;E:\\3rd_party\\Suitesparse\\install\\bin;E:\\3rd_party\\suitesparse-metis-for-windows-1.8.0\\lapack_windows;F:\\theas_dll_test\\bin;C:\\Users\\adm\\AppData\\Local\\Microsoft\\WindowsApps;E:\\3rd_party\\pcl1131\\3rdParty\\FLANN\\bin;E:\\3rd_party\\pcl1131\\3rdParty\\Qhull\\bin;E:\\3rd_party\\pcl1131\\3rdParty\\OpenNI2\\Tools;E:\\3rd_party\\pcl1131\\3rdParty\\VTK\\bin;E:\\3rd_party\\pcl1131\\bin;E:\\3rd_party\\pcl1131\\3rdParty\\OpenNI2\\Redist\\;D:\\Microsoft VS Code\\bin;E:\\Program Files\\JetBrains\\PyCharm Community Edition 2023.1.3\\bin;;C:\\MinGW\\bin;C:\\Users\\adm\\.dotnet\\tools;E:\\3rd_party\\pcl1131\\3rdParty\\Boost\\lib;D:\\PCL 1.8.1\\bin;D:\\PCL 1.8.1\\3rdParty\\VTK\\bin;D:\\PCL 1.8.1\\3rdParty\\OpenNI2\\Tools;D:\\PCL 1.8.1\\3rdParty\\Qhull\\bin;D:\\PCL 1.8.1\\3rdParty\\FLANN\\bin;D:\\PCL 1.8.1\\3rdParty\\Boost\\lib;D:\\PCL 1.8.1\\3rdParty\\FLANN\\lib;;
+        #$ INCLUDES="-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.7\\bin/../include"  
+        #$ LIBRARIES=  "/LIBPATH:C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.7\\bin/../lib/x64"
+        #$ CUDAFE_FLAGS=--sdk_dir "C:\\Program Files (x86)\\Windows Kits\\10"
+        #$ PTXAS_FLAGS=
+        CMakeCUDACompilerId.cu
+        #$ cl.exe @"C:\\Users\\adm\\AppData\\Local\\Temp/tmpxft_00009cf0_00000000-9.res" > "C:/Users/adm/AppData/Local/Temp/tmpxft_00009cf0_00000000-8_CMakeCUDACompilerId.cpp1.ii" 
+        CMakeCUDACompilerId.cu
+        #$ erase C:\\Users\\adm\\AppData\\Local\\Temp/tmpxft_00009cf0_00000000-9.res
+        #$ cicc --microsoft_version=1937 --msvc_target_version=1937 --compiler_bindir "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.37.32822/bin/HostX64/x64/../../../../../../.." --display_error_number --orig_src_file_name "F:/mcs2/openMVS/build/CMakeFiles/3.27.0-rc3/CompilerIdCUDA/CMakeCUDACompilerId.cu" --orig_src_path_name "F:\\mcs2\\openMVS\\build\\CMakeFiles\\3.27.0-rc3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" --allow_managed --debug_mode --sdk_dir "C:\\Program Files (x86)\\Windows Kits\\10"  -arch compute_52 -m64 --no-version-ident -ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 --include_file_name "tmpxft_00009cf0_00000000-4_CMakeCUDACompilerId.fatbin.c" -g -O0 -tused --gen_module_id_file --module_id_file_name "C:/Users/adm/AppData/Local/Temp/tmpxft_00009cf0_00000000-5_CMakeCUDACompilerId.module_id" --gen_c_file_name "C:/Users/adm/AppData/Local/Temp/tmpxft_00009cf0_00000000-7_CMakeCUDACompilerId.cudafe1.c" --stub_file_name "C:/Users/adm/AppData/Local/Temp/tmpxft_00009cf0_00000000-7_CMakeCUDACompilerId.cudafe1.stub.c" --gen_device_file_name "C:/Users/adm/AppData/Local/Temp/tmpxft_00009cf0_00000000-7_CMakeCUDACompilerId.cudafe1.gpu"  "C:/Users/adm/AppData/Local/Temp/tmpxft_00009cf0_00000000-8_CMakeCUDACompilerId.cpp1.ii" -o "C:/Users/adm/AppData/Local/Temp/tmpxft_00009cf0_00000000-7_CMakeCUDACompilerId.ptx"
+        #$ ptxas -arch=sm_52 -m64 -g --dont-merge-basicblocks --return-at-end "C:/Users/adm/AppData/Local/Temp/tmpxft_00009cf0_00000000-7_CMakeCUDACompilerId.ptx"  -o "C:/Users/adm/AppData/Local/Temp/tmpxft_00009cf0_00000000-10_CMakeCUDACompilerId.sm_52.cubin" 
+        #$ fatbinary -64 --ident="F:/mcs2/openMVS/build/CMakeFiles/3.27.0-rc3/CompilerIdCUDA/CMakeCUDACompilerId.cu" --cmdline="-g --dont-merge-basicblocks --return-at-end " --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " -g "--image3=kind=elf,sm=52,file=C:/Users/adm/AppData/Local/Temp/tmpxft_00009cf0_00000000-10_CMakeCUDACompilerId.sm_52.cubin" "--image3=kind=ptx,sm=52,file=C:/Users/adm/AppData/Local/Temp/tmpxft_00009cf0_00000000-7_CMakeCUDACompilerId.ptx" --embedded-fatbin="C:/Users/adm/AppData/Local/Temp/tmpxft_00009cf0_00000000-4_CMakeCUDACompilerId.fatbin.c" 
+        #$ erase C:/Users/adm/AppData/Local/Temp/tmpxft_00009cf0_00000000-4_CMakeCUDACompilerId.fatbin
+        #$ cl.exe @"C:\\Users\\adm\\AppData\\Local\\Temp/tmpxft_00009cf0_00000000-11.res" > "C:/Users/adm/AppData/Local/Temp/tmpxft_00009cf0_00000000-6_CMakeCUDACompilerId.cpp4.ii" 
+        CMakeCUDACompilerId.cu
+        #$ erase C:\\Users\\adm\\AppData\\Local\\Temp/tmpxft_00009cf0_00000000-11.res
+        #$ cudafe++ --microsoft_version=1937 --msvc_target_version=1937 --compiler_bindir "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.37.32822/bin/HostX64/x64/../../../../../../.." --display_error_number --orig_src_file_name "F:/mcs2/openMVS/build/CMakeFiles/3.27.0-rc3/CompilerIdCUDA/CMakeCUDACompilerId.cu" --orig_src_path_name "F:\\mcs2\\openMVS\\build\\CMakeFiles\\3.27.0-rc3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" --allow_managed --debug_mode --sdk_dir "C:\\Program Files (x86)\\Windows Kits\\10" --m64 --parse_templates --gen_c_file_name "C:/Users/adm/AppData/Local/Temp/tmpxft_00009cf0_00000000-7_CMakeCUDACompilerId.cudafe1.cpp" --stub_file_name "tmpxft_00009cf0_00000000-7_CMakeCUDACompilerId.cudafe1.stub.c" --module_id_file_name "C:/Users/adm/AppData/Local/Temp/tmpxft_00009cf0_00000000-5_CMakeCUDACompilerId.module_id" "C:/Users/adm/AppData/Local/Temp/tmpxft_00009cf0_00000000-6_CMakeCUDACompilerId.cpp4.ii" 
+        #$ cl.exe @"C:\\Users\\adm\\AppData\\Local\\Temp/tmpxft_00009cf0_00000000-12.res" -Fo"F:/mcs2/openMVS/build/CMakeFiles/3.27.0-rc3/CompilerIdCUDA/x64/Debug/CMakeCUDACompilerId.cu.obj" 
+        tmpxft_00009cf0_00000000-7_CMakeCUDACompilerId.cudafe1.cpp
+        #$ erase C:\\Users\\adm\\AppData\\Local\\Temp/tmpxft_00009cf0_00000000-12.res
+      已完成生成项目“F:\\mcs2\\openMVS\\build\\CMakeFiles\\3.27.0-rc3\\CompilerIdCUDA\\CompilerIdCUDA.vcxproj”(CudaBuildCore 个目标)的操作。
+      VcpkgTripletSelection:
+        Using triplet "x64-windows" from "C:\\src\\vcpkg\\installed\\x64-windows\\"
+        Using normalized configuration "Release"
+      VcpkgCheckManifestRoot:
+        The vcpkg manifest was disabled, but we found a manifest file in F:\\mcs2\\openMVS\\. You may want to enable vcpkg manifests in your properties page or pass /p:VcpkgEnableManifest=true to the msbuild invocation.
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCUDA.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.7\\lib\\x64" /LIBPATH:"C:\\src\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\src\\vcpkg\\installed\\x64-windows\\lib\\manual-link" cudart_static.lib "C:\\src\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCUDA.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCUDA.lib" /MACHINE:X64 "F:\\mcs2\\openMVS\\build\\CMakeFiles\\3.27.0-rc3\\CompilerIdCUDA\\x64\\Debug\\CMakeCUDACompilerId.cu.obj"
+          正在创建库 .\\CompilerIdCUDA.lib 和对象 .\\CompilerIdCUDA.exp
+      LINK : warning LNK4098: 默认库“LIBCMT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library [F:\\mcs2\\openMVS\\build\\CMakeFiles\\3.27.0-rc3\\CompilerIdCUDA\\CompilerIdCUDA.vcxproj]
+        CompilerIdCUDA.vcxproj -> F:\\mcs2\\openMVS\\build\\CMakeFiles\\3.27.0-rc3\\CompilerIdCUDA\\CompilerIdCUDA.exe
+      AppLocalFromInstalled:
+        pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\src\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "F:\\mcs2\\openMVS\\build\\CMakeFiles\\3.27.0-rc3\\CompilerIdCUDA\\CompilerIdCUDA.exe" "C:\\src\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCUDA.tlog\\CompilerIdCUDA.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+        'pwsh.exe' 不是内部或外部命令，也不是可运行的程序
+        或批处理文件。
+        命令“pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\src\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "F:\\mcs2\\openMVS\\build\\CMakeFiles\\3.27.0-rc3\\CompilerIdCUDA\\CompilerIdCUDA.exe" "C:\\src\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCUDA.tlog\\CompilerIdCUDA.write.1u.tlog" "Debug\\vcpkg.applocal.log"”已退出，代码为 9009。
+        "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\src\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "F:\\mcs2\\openMVS\\build\\CMakeFiles\\3.27.0-rc3\\CompilerIdCUDA\\CompilerIdCUDA.exe" "C:\\src\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCUDA.tlog\\CompilerIdCUDA.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+      PostBuildEvent:
+        echo CMAKE_CUDA_COMPILER=C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.7\\bin\\nvcc.exe
+        :VCEnd
+        CMAKE_CUDA_COMPILER=C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.7\\bin\\nvcc.exe
+      FinalizeBuildStatus:
+        正在删除文件“Debug\\CompilerIdCUDA.tlog\\unsuccessfulbuild”。
+        正在对“Debug\\CompilerIdCUDA.tlog\\CompilerIdCUDA.lastbuildstate”执行 Touch 任务。
+      已完成生成项目“F:\\mcs2\\openMVS\\build\\CMakeFiles\\3.27.0-rc3\\CompilerIdCUDA\\CompilerIdCUDA.vcxproj”(默认目标)的操作。
+      
+      已成功生成。
+      
+      “F:\\mcs2\\openMVS\\build\\CMakeFiles\\3.27.0-rc3\\CompilerIdCUDA\\CompilerIdCUDA.vcxproj”(默认目标) (1) ->
+      (Link 目标) -> 
+        LINK : warning LNK4098: 默认库“LIBCMT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library [F:\\mcs2\\openMVS\\build\\CMakeFiles\\3.27.0-rc3\\CompilerIdCUDA\\CompilerIdCUDA.vcxproj]
+      
+          1 个警告
+          0 个错误
+      
+      已用时间 00:00:02.70
+      
+      
+      Compilation of the CUDA compiler identification source "CMakeCUDACompilerId.cu" produced "CompilerIdCUDA.exe"
+      
+      Compilation of the CUDA compiler identification source "CMakeCUDACompilerId.cu" produced "CompilerIdCUDA.exp"
+      
+      Compilation of the CUDA compiler identification source "CMakeCUDACompilerId.cu" produced "CompilerIdCUDA.lib"
+      
+      Compilation of the CUDA compiler identification source "CMakeCUDACompilerId.cu" produced "CompilerIdCUDA.vcxproj"
+      
+      The CUDA compiler identification is NVIDIA, found in:
+        F:/mcs2/openMVS/build/CMakeFiles/3.27.0-rc3/CompilerIdCUDA/CompilerIdCUDA.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCUDACompiler.cmake:579 (message)"
+      - "CMakeLists.txt:114 (ENABLE_LANGUAGE)"
+    message: |
+      Parsed CUDA nvcc include information:
+        found 'INCLUDES=' string: ["-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.7\\bin/../include"  ]
+      
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeTestCUDACompiler.cmake:19 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:114 (ENABLE_LANGUAGE)"
+    checks:
+      - "Detecting CUDA compiler ABI info"
+    directories:
+      source: "F:/mcs2/openMVS/build/CMakeFiles/CMakeScratch/TryCompile-1s1e0u"
+      binary: "F:/mcs2/openMVS/build/CMakeFiles/CMakeScratch/TryCompile-1s1e0u"
+    cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "52"
+      CMAKE_CUDA_FLAGS: "-D_WINDOWS -Xcompiler=\"/W3 /GR /EHsc\""
+      CMAKE_CUDA_FLAGS_DEBUG: "-Xcompiler=\"-MDd  -Zi -Ob0 -Od /RTC1\""
+      CMAKE_CUDA_RUNTIME_LIBRARY: "Static"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64 "
+      CMAKE_MODULE_PATH: "F:/mcs2/openMVS/build/Modules"
+    buildResult:
+      variable: "CMAKE_CUDA_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'F:/mcs2/openMVS/build/CMakeFiles/CMakeScratch/TryCompile-1s1e0u'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_ffe57.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        适用于 .NET Framework MSBuild 版本 17.7.2+d6990bcfa
+        生成启动时间为 2024/4/28 10:46:45。
+        
+        节点 1 上的项目“F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s1e0u\\cmTC_ffe57.vcxproj”(默认目标)。
+        PrepareForBuild:
+          正在创建目录“cmTC_ffe57.dir\\Debug\\”。
+          正在创建目录“F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s1e0u\\Debug\\”。
+          正在创建目录“cmTC_ffe57.dir\\Debug\\cmTC_ffe57.tlog\\”。
+        InitializeBuildStatus:
+          正在创建“cmTC_ffe57.dir\\Debug\\cmTC_ffe57.tlog\\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+          正在对“cmTC_ffe57.dir\\Debug\\cmTC_ffe57.tlog\\unsuccessfulbuild”执行 Touch 任务。
+        AddCudaCompileDeps:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /D__CUDACC_VER_MAJOR__=11 /D__CUDACC_VER_MINOR__=7 /D_WINDOWS /DCMAKE_INTDIR="Debug" /D_MBCS /DCMAKE_INTDIR="Debug" /I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.7\\bin" /I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.7\\include" /I. /FIcuda_runtime.h /c "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCUDACompilerABI.cu" 
+        项目“F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s1e0u\\cmTC_ffe57.vcxproj”(1)正在节点 1 上生成“F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s1e0u\\cmTC_ffe57.vcxproj”(1:2) (CudaBuildCore 个目标)。
+        CudaBuildCore:
+          Compiling CUDA source file C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCUDACompilerABI.cu...
+          cmd.exe /C "C:\\Users\\adm\\AppData\\Local\\Temp\\tmpfd0711e86b044e599c1d8fc92c200474.cmd"
+          "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.7\\bin\\nvcc.exe"  --use-local-env -ccbin "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64" -x cu    -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.7\\include"     --keep-dir x64\\Debug  -maxrregcount=0  --machine 64 --compile -cudart static --generate-code=arch=compute_52,code=[compute_52,sm_52] -Xcompiler="/EHsc -Zi -Ob0 -v" -g  -D_WINDOWS -D"CMAKE_INTDIR=\\"Debug\\"" -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -Xcompiler "/EHsc /W3 /nologo /Od /FdcmTC_ffe57.dir\\Debug\\vc143.pdb /FS /Zi /RTC1 /MDd /GR" -o cmTC_ffe57.dir\\Debug\\CMakeCUDACompilerABI.obj "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCUDACompilerABI.cu"
+          
+          F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s1e0u>"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.7\\bin\\nvcc.exe"  --use-local-env -ccbin "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64" -x cu    -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.7\\include"     --keep-dir x64\\Debug  -maxrregcount=0  --machine 64 --compile -cudart static --generate-code=arch=compute_52,code=[compute_52,sm_52] -Xcompiler="/EHsc -Zi -Ob0 -v" -g  -D_WINDOWS -D"CMAKE_INTDIR=\\"Debug\\"" -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -Xcompiler "/EHsc /W3 /nologo /Od /FdcmTC_ffe57.dir\\Debug\\vc143.pdb /FS /Zi /RTC1 /MDd /GR" -o cmTC_ffe57.dir\\Debug\\CMakeCUDACompilerABI.obj "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCUDACompilerABI.cu" 
+        cl : 命令行 warning D9002: 忽略未知选项“-v” [F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s1e0u\\cmTC_ffe57.vcxproj]
+          CMakeCUDACompilerABI.cu
+        cl : 命令行 warning D9002: 忽略未知选项“-v” [F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s1e0u\\cmTC_ffe57.vcxproj]
+          CMakeCUDACompilerABI.cu
+          CMakeCUDACompilerABI.cu
+        cl : 命令行 warning D9002: 忽略未知选项“-v” [F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s1e0u\\cmTC_ffe57.vcxproj]
+        已完成生成项目“F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s1e0u\\cmTC_ffe57.vcxproj”(CudaBuildCore 个目标)的操作。
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\src\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Release"
+        VcpkgCheckManifestRoot:
+          The vcpkg manifest was disabled, but we found a manifest file in F:\\mcs2\\openMVS\\. You may want to enable vcpkg manifests in your properties page or pass /p:VcpkgEnableManifest=true to the msbuild invocation.
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s1e0u\\Debug\\cmTC_ffe57.exe" /INCREMENTAL /ILK:"cmTC_ffe57.dir\\Debug\\cmTC_ffe57.ilk" /NOLOGO /LIBPATH:"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.7\\lib\\x64" /LIBPATH:"C:\\src\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\src\\vcpkg\\installed\\x64-windows\\lib\\manual-link" cudadevrt.lib cudart_static.lib "C:\\src\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:/mcs2/openMVS/build/CMakeFiles/CMakeScratch/TryCompile-1s1e0u/Debug/cmTC_ffe57.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:/mcs2/openMVS/build/CMakeFiles/CMakeScratch/TryCompile-1s1e0u/Debug/cmTC_ffe57.lib" /MACHINE:X64  /machine:x64 -v cmTC_ffe57.dir\\Debug\\CMakeCUDACompilerABI.obj
+        LINK : warning LNK4044: 无法识别的选项“/v”；已忽略 [F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s1e0u\\cmTC_ffe57.vcxproj]
+            正在创建库 F:/mcs2/openMVS/build/CMakeFiles/CMakeScratch/TryCompile-1s1e0u/Debug/cmTC_ffe57.lib 和对象 F:/mcs2/openMVS/build/CMakeFiles/CMakeScratch/TryCompile-1s1e0u/Debug/cmTC_ffe57.exp
+        LINK : warning LNK4098: 默认库“LIBCMT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library [F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s1e0u\\cmTC_ffe57.vcxproj]
+          cmTC_ffe57.vcxproj -> F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s1e0u\\Debug\\cmTC_ffe57.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\src\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s1e0u\\Debug\\cmTC_ffe57.exe" "C:\\src\\vcpkg\\installed\\x64-windows\\bin" "cmTC_ffe57.dir\\Debug\\cmTC_ffe57.tlog\\cmTC_ffe57.write.1u.tlog" "cmTC_ffe57.dir\\Debug\\vcpkg.applocal.log"
+          'pwsh.exe' 不是内部或外部命令，也不是可运行的程序
+          或批处理文件。
+          命令“pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\src\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s1e0u\\Debug\\cmTC_ffe57.exe" "C:\\src\\vcpkg\\installed\\x64-windows\\bin" "cmTC_ffe57.dir\\Debug\\cmTC_ffe57.tlog\\cmTC_ffe57.write.1u.tlog" "cmTC_ffe57.dir\\Debug\\vcpkg.applocal.log"”已退出，代码为 9009。
+          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\src\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s1e0u\\Debug\\cmTC_ffe57.exe" "C:\\src\\vcpkg\\installed\\x64-windows\\bin" "cmTC_ffe57.dir\\Debug\\cmTC_ffe57.tlog\\cmTC_ffe57.write.1u.tlog" "cmTC_ffe57.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          正在删除文件“cmTC_ffe57.dir\\Debug\\cmTC_ffe57.tlog\\unsuccessfulbuild”。
+          正在对“cmTC_ffe57.dir\\Debug\\cmTC_ffe57.tlog\\cmTC_ffe57.lastbuildstate”执行 Touch 任务。
+        已完成生成项目“F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s1e0u\\cmTC_ffe57.vcxproj”(默认目标)的操作。
+        
+        已成功生成。
+        
+        “F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s1e0u\\cmTC_ffe57.vcxproj”(默认目标) (1) ->
+        “F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s1e0u\\cmTC_ffe57.vcxproj”(CudaBuildCore 目标) (1:2) ->
+        (CudaBuildCore 目标) -> 
+          cl : 命令行 warning D9002: 忽略未知选项“-v” [F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s1e0u\\cmTC_ffe57.vcxproj]
+          cl : 命令行 warning D9002: 忽略未知选项“-v” [F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s1e0u\\cmTC_ffe57.vcxproj]
+          cl : 命令行 warning D9002: 忽略未知选项“-v” [F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s1e0u\\cmTC_ffe57.vcxproj]
+        
+        
+        “F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s1e0u\\cmTC_ffe57.vcxproj”(默认目标) (1) ->
+        (Link 目标) -> 
+          LINK : warning LNK4044: 无法识别的选项“/v”；已忽略 [F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s1e0u\\cmTC_ffe57.vcxproj]
+          LINK : warning LNK4098: 默认库“LIBCMT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library [F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s1e0u\\cmTC_ffe57.vcxproj]
+        
+            5 个警告
+            0 个错误
+        
+        已用时间 00:00:02.73
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeTestCUDACompiler.cmake:19 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:114 (ENABLE_LANGUAGE)"
+    message: |
+      Parsed CUDA implicit include dir info: rv=start
+        warn: unable to parse implicit include dirs!
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeTestCUDACompiler.cmake:19 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:114 (ENABLE_LANGUAGE)"
+    message: |
+      Parsed CUDA implicit link information:
+        link line regex: [^( *|.*[/\\])(link\\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: 'F:/mcs2/openMVS/build/CMakeFiles/CMakeScratch/TryCompile-1s1e0u']
+        ignore line: []
+        ignore line: [Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_ffe57.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n]
+        ignore line: [适用于 .NET Framework MSBuild 版本 17.7.2+d6990bcfa]
+        ignore line: [生成启动时间为 2024/4/28 10:46:45。]
+        ignore line: []
+        ignore line: [节点 1 上的项目“F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s1e0u\\cmTC_ffe57.vcxproj”(默认目标)。]
+        ignore line: [PrepareForBuild:]
+        ignore line: [  正在创建目录“cmTC_ffe57.dir\\Debug\\”。]
+        ignore line: [  正在创建目录“F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s1e0u\\Debug\\”。]
+        ignore line: [  正在创建目录“cmTC_ffe57.dir\\Debug\\cmTC_ffe57.tlog\\”。]
+        ignore line: [InitializeBuildStatus:]
+        ignore line: [  正在创建“cmTC_ffe57.dir\\Debug\\cmTC_ffe57.tlog\\unsuccessfulbuild”，因为已指定“AlwaysCreate”。]
+        ignore line: [  正在对“cmTC_ffe57.dir\\Debug\\cmTC_ffe57.tlog\\unsuccessfulbuild”执行 Touch 任务。]
+        ignore line: [AddCudaCompileDeps:]
+        ignore line: [  C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /D__CUDACC_VER_MAJOR__=11 /D__CUDACC_VER_MINOR__=7 /D_WINDOWS /DCMAKE_INTDIR="Debug" /D_MBCS /DCMAKE_INTDIR="Debug" /I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.7\\bin" /I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.7\\include" /I. /FIcuda_runtime.h /c "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCUDACompilerABI.cu" ]
+        ignore line: [项目“F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s1e0u\\cmTC_ffe57.vcxproj”(1)正在节点 1 上生成“F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s1e0u\\cmTC_ffe57.vcxproj”(1:2) (CudaBuildCore 个目标)。]
+        ignore line: [CudaBuildCore:]
+        ignore line: [  Compiling CUDA source file C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCUDACompilerABI.cu...]
+        ignore line: [  cmd.exe /C "C:\\Users\\adm\\AppData\\Local\\Temp\\tmpfd0711e86b044e599c1d8fc92c200474.cmd"]
+        ignore line: [  "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.7\\bin\\nvcc.exe"  --use-local-env -ccbin "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64" -x cu    -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.7\\include"     --keep-dir x64\\Debug  -maxrregcount=0  --machine 64 --compile -cudart static --generate-code=arch=compute_52 code=[compute_52 sm_52] -Xcompiler="/EHsc -Zi -Ob0 -v" -g  -D_WINDOWS -D"CMAKE_INTDIR=\\"Debug\\"" -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -Xcompiler "/EHsc /W3 /nologo /Od /FdcmTC_ffe57.dir\\Debug\\vc143.pdb /FS /Zi /RTC1 /MDd /GR" -o cmTC_ffe57.dir\\Debug\\CMakeCUDACompilerABI.obj "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCUDACompilerABI.cu"]
+        ignore line: [  ]
+        ignore line: [  F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s1e0u>"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.7\\bin\\nvcc.exe"  --use-local-env -ccbin "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64" -x cu    -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.7\\include"     --keep-dir x64\\Debug  -maxrregcount=0  --machine 64 --compile -cudart static --generate-code=arch=compute_52 code=[compute_52 sm_52] -Xcompiler="/EHsc -Zi -Ob0 -v" -g  -D_WINDOWS -D"CMAKE_INTDIR=\\"Debug\\"" -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -Xcompiler "/EHsc /W3 /nologo /Od /FdcmTC_ffe57.dir\\Debug\\vc143.pdb /FS /Zi /RTC1 /MDd /GR" -o cmTC_ffe57.dir\\Debug\\CMakeCUDACompilerABI.obj "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCUDACompilerABI.cu" ]
+        ignore line: [cl : 命令行 warning D9002: 忽略未知选项“-v” [F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s1e0u\\cmTC_ffe57.vcxproj]]
+        ignore line: [  CMakeCUDACompilerABI.cu]
+        ignore line: [cl : 命令行 warning D9002: 忽略未知选项“-v” [F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s1e0u\\cmTC_ffe57.vcxproj]]
+        ignore line: [  CMakeCUDACompilerABI.cu]
+        ignore line: [  CMakeCUDACompilerABI.cu]
+        ignore line: [cl : 命令行 warning D9002: 忽略未知选项“-v” [F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s1e0u\\cmTC_ffe57.vcxproj]]
+        ignore line: [已完成生成项目“F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s1e0u\\cmTC_ffe57.vcxproj”(CudaBuildCore 个目标)的操作。]
+        ignore line: [VcpkgTripletSelection:]
+        ignore line: [  Using triplet "x64-windows" from "C:\\src\\vcpkg\\installed\\x64-windows\\"]
+        ignore line: [  Using normalized configuration "Release"]
+        ignore line: [VcpkgCheckManifestRoot:]
+        ignore line: [  The vcpkg manifest was disabled  but we found a manifest file in F:\\mcs2\\openMVS\\. You may want to enable vcpkg manifests in your properties page or pass /p:VcpkgEnableManifest=true to the msbuild invocation.]
+        ignore line: [Link:]
+        ignore line: [  C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s1e0u\\Debug\\cmTC_ffe57.exe" /INCREMENTAL /ILK:"cmTC_ffe57.dir\\Debug\\cmTC_ffe57.ilk" /NOLOGO /LIBPATH:"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.7\\lib\\x64" /LIBPATH:"C:\\src\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\src\\vcpkg\\installed\\x64-windows\\lib\\manual-link" cudadevrt.lib cudart_static.lib "C:\\src\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:/mcs2/openMVS/build/CMakeFiles/CMakeScratch/TryCompile-1s1e0u/Debug/cmTC_ffe57.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:/mcs2/openMVS/build/CMakeFiles/CMakeScratch/TryCompile-1s1e0u/Debug/cmTC_ffe57.lib" /MACHINE:X64  /machine:x64 -v cmTC_ffe57.dir\\Debug\\CMakeCUDACompilerABI.obj]
+        ignore line: [LINK : warning LNK4044: 无法识别的选项“/v”；已忽略 [F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s1e0u\\cmTC_ffe57.vcxproj]]
+        ignore line: [    正在创建库 F:/mcs2/openMVS/build/CMakeFiles/CMakeScratch/TryCompile-1s1e0u/Debug/cmTC_ffe57.lib 和对象 F:/mcs2/openMVS/build/CMakeFiles/CMakeScratch/TryCompile-1s1e0u/Debug/cmTC_ffe57.exp]
+        ignore line: [LINK : warning LNK4098: 默认库“LIBCMT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library [F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s1e0u\\cmTC_ffe57.vcxproj]]
+        ignore line: [  cmTC_ffe57.vcxproj -> F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s1e0u\\Debug\\cmTC_ffe57.exe]
+        ignore line: [AppLocalFromInstalled:]
+        ignore line: [  pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\src\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s1e0u\\Debug\\cmTC_ffe57.exe" "C:\\src\\vcpkg\\installed\\x64-windows\\bin" "cmTC_ffe57.dir\\Debug\\cmTC_ffe57.tlog\\cmTC_ffe57.write.1u.tlog" "cmTC_ffe57.dir\\Debug\\vcpkg.applocal.log"]
+        ignore line: [  'pwsh.exe' 不是内部或外部命令，也不是可运行的程序]
+        ignore line: [  或批处理文件。]
+        ignore line: [  命令“pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\src\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s1e0u\\Debug\\cmTC_ffe57.exe" "C:\\src\\vcpkg\\installed\\x64-windows\\bin" "cmTC_ffe57.dir\\Debug\\cmTC_ffe57.tlog\\cmTC_ffe57.write.1u.tlog" "cmTC_ffe57.dir\\Debug\\vcpkg.applocal.log"”已退出，代码为 9009。]
+        ignore line: [  "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\src\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s1e0u\\Debug\\cmTC_ffe57.exe" "C:\\src\\vcpkg\\installed\\x64-windows\\bin" "cmTC_ffe57.dir\\Debug\\cmTC_ffe57.tlog\\cmTC_ffe57.write.1u.tlog" "cmTC_ffe57.dir\\Debug\\vcpkg.applocal.log"]
+        ignore line: [FinalizeBuildStatus:]
+        ignore line: [  正在删除文件“cmTC_ffe57.dir\\Debug\\cmTC_ffe57.tlog\\unsuccessfulbuild”。]
+        ignore line: [  正在对“cmTC_ffe57.dir\\Debug\\cmTC_ffe57.tlog\\cmTC_ffe57.lastbuildstate”执行 Touch 任务。]
+        ignore line: [已完成生成项目“F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s1e0u\\cmTC_ffe57.vcxproj”(默认目标)的操作。]
+        ignore line: []
+        ignore line: [已成功生成。]
+        ignore line: []
+        ignore line: [“F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s1e0u\\cmTC_ffe57.vcxproj”(默认目标) (1) ->]
+        ignore line: [“F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s1e0u\\cmTC_ffe57.vcxproj”(CudaBuildCore 目标) (1:2) ->]
+        ignore line: [(CudaBuildCore 目标) -> ]
+        ignore line: [  cl : 命令行 warning D9002: 忽略未知选项“-v” [F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s1e0u\\cmTC_ffe57.vcxproj]]
+        ignore line: [  cl : 命令行 warning D9002: 忽略未知选项“-v” [F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s1e0u\\cmTC_ffe57.vcxproj]]
+        ignore line: [  cl : 命令行 warning D9002: 忽略未知选项“-v” [F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s1e0u\\cmTC_ffe57.vcxproj]]
+        ignore line: []
+        ignore line: []
+        ignore line: [“F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s1e0u\\cmTC_ffe57.vcxproj”(默认目标) (1) ->]
+        ignore line: [(Link 目标) -> ]
+        ignore line: [  LINK : warning LNK4044: 无法识别的选项“/v”；已忽略 [F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s1e0u\\cmTC_ffe57.vcxproj]]
+        ignore line: [  LINK : warning LNK4098: 默认库“LIBCMT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library [F:\\mcs2\\openMVS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s1e0u\\cmTC_ffe57.vcxproj]]
+        ignore line: []
+        ignore line: [    5 个警告]
+        ignore line: [    0 个错误]
+        ignore line: []
+        ignore line: [已用时间 00:00:02.73]
+        ignore line: []
+        ignore line: []
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+...

@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F68D26FB-9D80-3315-A4CC-B259FDA61568}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>uninstall</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 11.7.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\include;F:\mcs2\openMVS\vcpkg_installed\x64-windows\include\python3.11;F:\mcs2\openMVS\vcpkg_installed\x64-windows\include;F:\mcs2\openMVS\vcpkg_installed\x64-windows\include\eigen3;F:\mcs2\openMVS;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\include;F:\mcs2\openMVS\vcpkg_installed\x64-windows\include\python3.11;F:\mcs2\openMVS\vcpkg_installed\x64-windows\include;F:\mcs2\openMVS\vcpkg_installed\x64-windows\include\eigen3;F:\mcs2\openMVS;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\include;F:\mcs2\openMVS\vcpkg_installed\x64-windows\include\python3.11;F:\mcs2\openMVS\vcpkg_installed\x64-windows\include;F:\mcs2\openMVS\vcpkg_installed\x64-windows\include\eigen3;F:\mcs2\openMVS;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\include;F:\mcs2\openMVS\vcpkg_installed\x64-windows\include\python3.11;F:\mcs2\openMVS\vcpkg_installed\x64-windows\include;F:\mcs2\openMVS\vcpkg_installed\x64-windows\include\eigen3;F:\mcs2\openMVS;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\mcs2\openMVS\CMakeFiles\2e884302f8609932ddee32d87a557963\uninstall.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -P F:/mcs2/openMVS/cmake_uninstall.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\mcs2\openMVS\CMakeFiles\uninstall</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -P F:/mcs2/openMVS/cmake_uninstall.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\mcs2\openMVS\CMakeFiles\uninstall</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -P F:/mcs2/openMVS/cmake_uninstall.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\mcs2\openMVS\CMakeFiles\uninstall</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -P F:/mcs2/openMVS/cmake_uninstall.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\mcs2\openMVS\CMakeFiles\uninstall</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\mcs2\openMVS\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule F:/mcs2/openMVS/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SF:/mcs2/openMVS -BF:/mcs2/openMVS --check-stamp-file F:/mcs2/openMVS/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.27\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCUDAInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\NVIDIA-CUDA.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindCUDA\select_compute_arch.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindOpenMP.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPython\Support.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPython3.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindTIFF.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-NVIDIA-CUDA.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\WriteBasicConfigVersionFile.cmake;C:\src\vcpkg\scripts\buildsystems\vcpkg.cmake;F:\mcs2\openMVS\CMakeFiles\3.27.0-rc3\CMakeCCompiler.cmake;F:\mcs2\openMVS\CMakeFiles\3.27.0-rc3\CMakeCUDACompiler.cmake;F:\mcs2\openMVS\CMakeFiles\3.27.0-rc3\CMakeCXXCompiler.cmake;F:\mcs2\openMVS\CMakeFiles\3.27.0-rc3\CMakeRCCompiler.cmake;F:\mcs2\openMVS\CMakeFiles\3.27.0-rc3\CMakeSystem.cmake;F:\mcs2\openMVS\build\Modules\FindBREAKPAD.cmake;F:\mcs2\openMVS\build\Modules\FindEigen3.cmake;F:\mcs2\openMVS\build\Templates\ConfigLocal.h.in;F:\mcs2\openMVS\build\Templates\OpenMVSConfig.cmake.in;F:\mcs2\openMVS\build\Templates\cmake_uninstall.cmake.in;F:\mcs2\openMVS\build\Utils.cmake;F:\mcs2\openMVS\vcpkg.json;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\boost\vcpkg-cmake-wrapper.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\eigen3\Eigen3Config.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\eigen3\Eigen3ConfigVersion.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\eigen3\Eigen3Targets.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\imath\ImathConfig.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\imath\ImathConfigVersion.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\imath\ImathTargets-debug.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\imath\ImathTargets-release.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\imath\ImathTargets.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\libdeflate\libdeflate-config-version.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\libdeflate\libdeflate-config.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\libdeflate\libdeflate-targets-debug.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\libdeflate\libdeflate-targets-release.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\libdeflate\libdeflate-targets.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\opencv\OpenCVConfig-version.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\opencv\OpenCVConfig.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\opencv\OpenCVModules-debug.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\opencv\OpenCVModules-release.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\opencv\OpenCVModules.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\openexr\OpenEXRConfig.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\openexr\OpenEXRConfigVersion.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\openexr\OpenEXRTargets-debug.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\openexr\OpenEXRTargets-release.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\openexr\OpenEXRTargets.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\protobuf\protobuf-config-version.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\protobuf\protobuf-config.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\protobuf\protobuf-module.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\protobuf\protobuf-options.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\protobuf\protobuf-targets-debug.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\protobuf\protobuf-targets-release.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\protobuf\protobuf-targets.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\protobuf\vcpkg-cmake-wrapper.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\python3\vcpkg-cmake-wrapper.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\quirc\quirc-config-debug.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\quirc\quirc-config-release.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\quirc\quirc-config.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\tiff\vcpkg-cmake-wrapper.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\mcs2\openMVS\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule F:/mcs2/openMVS/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SF:/mcs2/openMVS -BF:/mcs2/openMVS --check-stamp-file F:/mcs2/openMVS/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.27\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCUDAInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\NVIDIA-CUDA.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindCUDA\select_compute_arch.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindOpenMP.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPython\Support.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPython3.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindTIFF.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-NVIDIA-CUDA.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\WriteBasicConfigVersionFile.cmake;C:\src\vcpkg\scripts\buildsystems\vcpkg.cmake;F:\mcs2\openMVS\CMakeFiles\3.27.0-rc3\CMakeCCompiler.cmake;F:\mcs2\openMVS\CMakeFiles\3.27.0-rc3\CMakeCUDACompiler.cmake;F:\mcs2\openMVS\CMakeFiles\3.27.0-rc3\CMakeCXXCompiler.cmake;F:\mcs2\openMVS\CMakeFiles\3.27.0-rc3\CMakeRCCompiler.cmake;F:\mcs2\openMVS\CMakeFiles\3.27.0-rc3\CMakeSystem.cmake;F:\mcs2\openMVS\build\Modules\FindBREAKPAD.cmake;F:\mcs2\openMVS\build\Modules\FindEigen3.cmake;F:\mcs2\openMVS\build\Templates\ConfigLocal.h.in;F:\mcs2\openMVS\build\Templates\OpenMVSConfig.cmake.in;F:\mcs2\openMVS\build\Templates\cmake_uninstall.cmake.in;F:\mcs2\openMVS\build\Utils.cmake;F:\mcs2\openMVS\vcpkg.json;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\boost\vcpkg-cmake-wrapper.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\eigen3\Eigen3Config.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\eigen3\Eigen3ConfigVersion.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\eigen3\Eigen3Targets.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\imath\ImathConfig.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\imath\ImathConfigVersion.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\imath\ImathTargets-debug.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\imath\ImathTargets-release.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\imath\ImathTargets.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\libdeflate\libdeflate-config-version.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\libdeflate\libdeflate-config.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\libdeflate\libdeflate-targets-debug.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\libdeflate\libdeflate-targets-release.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\libdeflate\libdeflate-targets.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\opencv\OpenCVConfig-version.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\opencv\OpenCVConfig.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\opencv\OpenCVModules-debug.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\opencv\OpenCVModules-release.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\opencv\OpenCVModules.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\openexr\OpenEXRConfig.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\openexr\OpenEXRConfigVersion.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\openexr\OpenEXRTargets-debug.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\openexr\OpenEXRTargets-release.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\openexr\OpenEXRTargets.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\protobuf\protobuf-config-version.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\protobuf\protobuf-config.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\protobuf\protobuf-module.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\protobuf\protobuf-options.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\protobuf\protobuf-targets-debug.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\protobuf\protobuf-targets-release.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\protobuf\protobuf-targets.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\protobuf\vcpkg-cmake-wrapper.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\python3\vcpkg-cmake-wrapper.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\quirc\quirc-config-debug.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\quirc\quirc-config-release.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\quirc\quirc-config.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\tiff\vcpkg-cmake-wrapper.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\mcs2\openMVS\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule F:/mcs2/openMVS/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SF:/mcs2/openMVS -BF:/mcs2/openMVS --check-stamp-file F:/mcs2/openMVS/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.27\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCUDAInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\NVIDIA-CUDA.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindCUDA\select_compute_arch.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindOpenMP.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPython\Support.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPython3.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindTIFF.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-NVIDIA-CUDA.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\WriteBasicConfigVersionFile.cmake;C:\src\vcpkg\scripts\buildsystems\vcpkg.cmake;F:\mcs2\openMVS\CMakeFiles\3.27.0-rc3\CMakeCCompiler.cmake;F:\mcs2\openMVS\CMakeFiles\3.27.0-rc3\CMakeCUDACompiler.cmake;F:\mcs2\openMVS\CMakeFiles\3.27.0-rc3\CMakeCXXCompiler.cmake;F:\mcs2\openMVS\CMakeFiles\3.27.0-rc3\CMakeRCCompiler.cmake;F:\mcs2\openMVS\CMakeFiles\3.27.0-rc3\CMakeSystem.cmake;F:\mcs2\openMVS\build\Modules\FindBREAKPAD.cmake;F:\mcs2\openMVS\build\Modules\FindEigen3.cmake;F:\mcs2\openMVS\build\Templates\ConfigLocal.h.in;F:\mcs2\openMVS\build\Templates\OpenMVSConfig.cmake.in;F:\mcs2\openMVS\build\Templates\cmake_uninstall.cmake.in;F:\mcs2\openMVS\build\Utils.cmake;F:\mcs2\openMVS\vcpkg.json;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\boost\vcpkg-cmake-wrapper.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\eigen3\Eigen3Config.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\eigen3\Eigen3ConfigVersion.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\eigen3\Eigen3Targets.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\imath\ImathConfig.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\imath\ImathConfigVersion.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\imath\ImathTargets-debug.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\imath\ImathTargets-release.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\imath\ImathTargets.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\libdeflate\libdeflate-config-version.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\libdeflate\libdeflate-config.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\libdeflate\libdeflate-targets-debug.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\libdeflate\libdeflate-targets-release.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\libdeflate\libdeflate-targets.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\opencv\OpenCVConfig-version.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\opencv\OpenCVConfig.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\opencv\OpenCVModules-debug.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\opencv\OpenCVModules-release.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\opencv\OpenCVModules.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\openexr\OpenEXRConfig.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\openexr\OpenEXRConfigVersion.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\openexr\OpenEXRTargets-debug.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\openexr\OpenEXRTargets-release.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\openexr\OpenEXRTargets.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\protobuf\protobuf-config-version.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\protobuf\protobuf-config.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\protobuf\protobuf-module.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\protobuf\protobuf-options.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\protobuf\protobuf-targets-debug.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\protobuf\protobuf-targets-release.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\protobuf\protobuf-targets.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\protobuf\vcpkg-cmake-wrapper.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\python3\vcpkg-cmake-wrapper.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\quirc\quirc-config-debug.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\quirc\quirc-config-release.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\quirc\quirc-config.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\tiff\vcpkg-cmake-wrapper.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\mcs2\openMVS\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule F:/mcs2/openMVS/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SF:/mcs2/openMVS -BF:/mcs2/openMVS --check-stamp-file F:/mcs2/openMVS/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.27\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCUDAInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\NVIDIA-CUDA.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindCUDA\select_compute_arch.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindOpenMP.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPython\Support.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPython3.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindTIFF.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-NVIDIA-CUDA.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\WriteBasicConfigVersionFile.cmake;C:\src\vcpkg\scripts\buildsystems\vcpkg.cmake;F:\mcs2\openMVS\CMakeFiles\3.27.0-rc3\CMakeCCompiler.cmake;F:\mcs2\openMVS\CMakeFiles\3.27.0-rc3\CMakeCUDACompiler.cmake;F:\mcs2\openMVS\CMakeFiles\3.27.0-rc3\CMakeCXXCompiler.cmake;F:\mcs2\openMVS\CMakeFiles\3.27.0-rc3\CMakeRCCompiler.cmake;F:\mcs2\openMVS\CMakeFiles\3.27.0-rc3\CMakeSystem.cmake;F:\mcs2\openMVS\build\Modules\FindBREAKPAD.cmake;F:\mcs2\openMVS\build\Modules\FindEigen3.cmake;F:\mcs2\openMVS\build\Templates\ConfigLocal.h.in;F:\mcs2\openMVS\build\Templates\OpenMVSConfig.cmake.in;F:\mcs2\openMVS\build\Templates\cmake_uninstall.cmake.in;F:\mcs2\openMVS\build\Utils.cmake;F:\mcs2\openMVS\vcpkg.json;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\boost\vcpkg-cmake-wrapper.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\eigen3\Eigen3Config.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\eigen3\Eigen3ConfigVersion.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\eigen3\Eigen3Targets.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\imath\ImathConfig.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\imath\ImathConfigVersion.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\imath\ImathTargets-debug.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\imath\ImathTargets-release.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\imath\ImathTargets.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\libdeflate\libdeflate-config-version.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\libdeflate\libdeflate-config.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\libdeflate\libdeflate-targets-debug.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\libdeflate\libdeflate-targets-release.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\libdeflate\libdeflate-targets.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\opencv\OpenCVConfig-version.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\opencv\OpenCVConfig.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\opencv\OpenCVModules-debug.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\opencv\OpenCVModules-release.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\opencv\OpenCVModules.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\openexr\OpenEXRConfig.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\openexr\OpenEXRConfigVersion.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\openexr\OpenEXRTargets-debug.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\openexr\OpenEXRTargets-release.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\openexr\OpenEXRTargets.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\protobuf\protobuf-config-version.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\protobuf\protobuf-config.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\protobuf\protobuf-module.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\protobuf\protobuf-options.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\protobuf\protobuf-targets-debug.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\protobuf\protobuf-targets-release.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\protobuf\protobuf-targets.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\protobuf\vcpkg-cmake-wrapper.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\python3\vcpkg-cmake-wrapper.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\quirc\quirc-config-debug.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\quirc\quirc-config-release.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\quirc\quirc-config.cmake;F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\tiff\vcpkg-cmake-wrapper.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\mcs2\openMVS\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="F:\mcs2\openMVS\CMakeFiles\uninstall">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="F:\mcs2\openMVS\ZERO_CHECK.vcxproj">
+      <Project>{83591AF3-BBA5-3FAC-8569-5A36CA08BE43}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 11.7.targets" />
+  </ImportGroup>
+</Project>

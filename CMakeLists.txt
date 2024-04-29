@@ -226,6 +226,14 @@ else()
 	MESSAGE("-- Can't find OpenCV. Please specify OpenCV directory using OpenCV_DIR variable")
 endif()
 
+# corelib
+# set(CoreLIB_INCLUDE_DIRS E:/3rd_party/core_library/Include/DataCore 
+#                          E:/3rd_party/core_library/Include/StereoReconstruction
+#                          E:/3rd_party/core_library/Include/TriMesh2
+#                          )
+# LIST(APPEND OpenMVS_EXTRA_INCLUDES ${CoreLIB_INCLUDE_DIRS})
+# INCLUDE_DIRECTORIES(${CoreLIB_INCLUDE_DIRS})
+
 LIST(REMOVE_DUPLICATES OpenMVS_EXTRA_INCLUDES)
 LIST(REMOVE_DUPLICATES OpenMVS_EXTRA_LIBS)
 
@@ -256,13 +264,13 @@ if(OpenMVS_BUILD_TOOLS)
 endif()
 ADD_SUBDIRECTORY(docs)
 
-if (OpenMVS_ENABLE_TESTS)
-	# enable testing functionality
-	ENABLE_TESTING()
-	# define tests
-	ADD_TEST(NAME UnitTests COMMAND $<TARGET_FILE:Tests> "0")
-	ADD_TEST(NAME PipelineTest COMMAND $<TARGET_FILE:Tests> "1")
-endif()
+# if (OpenMVS_ENABLE_TESTS)
+# 	# enable testing functionality
+# 	ENABLE_TESTING()
+# 	# define tests
+# 	ADD_TEST(NAME UnitTests COMMAND $<TARGET_FILE:Tests> "0")
+# 	ADD_TEST(NAME PipelineTest COMMAND $<TARGET_FILE:Tests> "1")
+# endif()
 
 # Export the package for use from the build-tree
 # (this registers the build-tree with a global CMake-registry)

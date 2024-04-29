@@ -1,0 +1,100 @@
+Detecting compiler hash for triplet x64-windows...
+-- Automatically setting %HTTP(S)_PROXY% environment variables to "127.0.0.1:7890".
+Compiler found: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/cl.exe
+All requested packages are currently installed.
+Total install time: 1.5 us
+The package zlib is compatible with built-in CMake targets:
+
+    find_package(ZLIB REQUIRED)
+    target_link_libraries(main PRIVATE ZLIB::ZLIB)
+
+The package boost is compatible with built-in CMake targets:
+
+    find_package(Boost REQUIRED [COMPONENTS <libs>...])
+    target_link_libraries(main PRIVATE Boost::boost Boost::<lib1> Boost::<lib2> ...)
+
+The package cgal provides CMake targets:
+
+    find_package(CGAL CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE CGAL::CGAL)
+
+
+eigen3 provides CMake targets:
+
+  # this is heuristically generated, and may not be correct
+  find_package(Eigen3 CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE Eigen3::Eigen)
+
+eigen3 provides pkg-config modules:
+
+  # A C++ template library for linear algebra: vectors, matrices, and related algorithms
+  eigen3
+
+The package opengl is compatible with built-in CMake targets via CMake v3.7 and prior syntax
+
+    find_package(OpenGL REQUIRED)
+    target_link_libraries(main PRIVATE ${OPENGL_LIBRARIES})
+    target_include_directories(main PRIVATE ${OPENGL_INCLUDE_DIR})
+
+and the CMake v3.8 and beyond imported target syntax
+
+    find_package(OpenGL REQUIRED)
+    target_link_libraries(main PRIVATE OpenGL::GL)
+
+introduction of various components
+
+    find_package(OpenGL REQUIRED COMPONENTS GL      # v3.8
+                                            GLU     # v3.8
+                                            GLX     # v3.10
+                                            EGL     # v3.10
+                                            OpenGL) # v3.10
+
+The OpenGL SDK is highly platform dependent and is usually an OS component. It's not realistic to build from source for every platform.
+
+    WINDOWS: is part of the Windows SDK which this package installs.
+    LINUX: the SDK may be installed from your distro's repo or from 3rd parties manually. There are too many to count.
+    APPLE: consult your distribution vendor on the state of OpenGL support: https://support.apple.com/en-us/HT202823
+
+The package glew is compatible with built-in CMake targets:
+
+    find_package(GLEW REQUIRED)
+    target_link_libraries(main PRIVATE GLEW::GLEW)
+
+glfw3 provides CMake targets:
+
+  # this is heuristically generated, and may not be correct
+  find_package(glfw3 CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE glfw)
+
+glfw3 provides pkg-config modules:
+
+  # A multi-platform library for OpenGL, window and input
+  glfw3
+
+The package libpng is compatible with built-in CMake targets:
+
+    find_package(PNG REQUIRED)
+    target_link_libraries(main PRIVATE PNG::PNG)
+
+tiff is compatible with built-in CMake targets:
+
+    find_package(TIFF REQUIRED)
+    target_link_libraries(main PRIVATE TIFF::TIFF)
+
+tiff provides pkg-config modules:
+
+    #  Tag Image File Format (TIFF) library.
+    libtiff-4
+
+opencv provides CMake targets:
+
+  # this is heuristically generated, and may not be correct
+  find_package(OpenCV CONFIG REQUIRED)
+  # note: 10 additional targets are not displayed.
+  target_link_libraries(main PRIVATE opencv_ml opencv_dnn opencv_core opencv_flann)
+
+vcglib is header-only and can be used from CMake via:
+
+  find_path(VCGLIB_INCLUDE_DIRS ")img/img.h")
+  target_include_directories(main PRIVATE ${VCGLIB_INCLUDE_DIRS})
+

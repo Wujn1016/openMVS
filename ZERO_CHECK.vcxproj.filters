@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="F:\mcs2\openMVS\CMakeFiles\2e884302f8609932ddee32d87a557963\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="F:\mcs2\openMVS\apps\CMakeLists.txt">
+      <Filter>Buildsystem Input Files\apps</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\apps\TextureMesh\CMakeLists.txt">
+      <Filter>Buildsystem Input Files\apps\TextureMesh</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\build\Modules\FindBREAKPAD.cmake">
+      <Filter>Buildsystem Input Files\build\Modules</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\build\Modules\FindEigen3.cmake">
+      <Filter>Buildsystem Input Files\build\Modules</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\build\Modules\FindVCG.cmake">
+      <Filter>Buildsystem Input Files\build\Modules</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\build\Templates\ConfigLocal.h.in">
+      <Filter>Buildsystem Input Files\build\Templates</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\build\Templates\OpenMVSConfig.cmake.in">
+      <Filter>Buildsystem Input Files\build\Templates</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\build\Templates\cmake_uninstall.cmake.in">
+      <Filter>Buildsystem Input Files\build\Templates</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\build\Utils.cmake">
+      <Filter>Buildsystem Input Files\build</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\docs\CMakeLists.txt">
+      <Filter>Buildsystem Input Files\docs</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\libs\CMakeLists.txt">
+      <Filter>Buildsystem Input Files\libs</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\libs\Common\CMakeLists.txt">
+      <Filter>Buildsystem Input Files\libs\Common</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\libs\IO\CMakeLists.txt">
+      <Filter>Buildsystem Input Files\libs\IO</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\libs\MVS\CMakeLists.txt">
+      <Filter>Buildsystem Input Files\libs\MVS</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\libs\Math\CMakeLists.txt">
+      <Filter>Buildsystem Input Files\libs\Math</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg.json">
+      <Filter>Buildsystem Input Files</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\boost\vcpkg-cmake-wrapper.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\boost</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\cgal\CGALConfig-installation-dirs.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\cgal</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\cgal\CGALConfig.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\cgal</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\cgal\CGALConfigBuildVersion.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\cgal</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\cgal\CGALConfigVersion.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\cgal</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\cgal\CGAL_Common.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\cgal</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\cgal\CGAL_CreateSingleSourceCGALProgram.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\cgal</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\cgal\CGAL_GeneratorSpecificSettings.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\cgal</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\cgal\CGAL_Macros.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\cgal</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\cgal\CGAL_SCM.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\cgal</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\cgal\CGAL_SetupBoost.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\cgal</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\cgal\CGAL_SetupCGALDependencies.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\cgal</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\cgal\CGAL_SetupGMP.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\cgal</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\cgal\CGAL_SetupVLD.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\cgal</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\cgal\CGAL_TweakFindBoost.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\cgal</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\cgal\CGAL_VersionUtils.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\cgal</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\cgal\CGAL_add_test.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\cgal</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\cgal\CGAL_enable_end_of_configuration_hook.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\cgal</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\cgal\CGAL_setup_target_dependencies.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\cgal</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\cgal\CGAL_target_use_TBB.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\cgal</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\cgal\FindGMP.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\cgal</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\cgal\FindGMPXX.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\cgal</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\cgal\FindMPFR.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\cgal</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\eigen3\Eigen3Config.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\eigen3</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\eigen3\Eigen3ConfigVersion.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\eigen3</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\eigen3\Eigen3Targets.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\eigen3</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\imath\ImathConfig.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\imath</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\imath\ImathConfigVersion.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\imath</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\imath\ImathTargets-debug.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\imath</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\imath\ImathTargets-release.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\imath</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\imath\ImathTargets.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\imath</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\jpeg\vcpkg-cmake-wrapper.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\jpeg</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\libdeflate\libdeflate-config-version.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\libdeflate</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\libdeflate\libdeflate-config.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\libdeflate</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\libdeflate\libdeflate-targets-debug.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\libdeflate</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\libdeflate\libdeflate-targets-release.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\libdeflate</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\libdeflate\libdeflate-targets.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\libdeflate</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\opencv\OpenCVConfig-version.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\opencv</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\opencv\OpenCVConfig.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\opencv</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\opencv\OpenCVModules-debug.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\opencv</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\opencv\OpenCVModules-release.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\opencv</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\opencv\OpenCVModules.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\opencv</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\openexr\OpenEXRConfig.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\openexr</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\openexr\OpenEXRConfigVersion.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\openexr</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\openexr\OpenEXRTargets-debug.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\openexr</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\openexr\OpenEXRTargets-release.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\openexr</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\openexr\OpenEXRTargets.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\openexr</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\png\vcpkg-cmake-wrapper.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\png</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\protobuf\protobuf-config-version.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\protobuf</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\protobuf\protobuf-config.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\protobuf</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\protobuf\protobuf-module.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\protobuf</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\protobuf\protobuf-options.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\protobuf</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\protobuf\protobuf-targets-debug.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\protobuf</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\protobuf\protobuf-targets-release.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\protobuf</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\protobuf\protobuf-targets.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\protobuf</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\protobuf\vcpkg-cmake-wrapper.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\protobuf</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\python3\vcpkg-cmake-wrapper.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\python3</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\quirc\quirc-config-debug.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\quirc</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\quirc\quirc-config-release.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\quirc</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\quirc\quirc-config.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\quirc</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\tiff\vcpkg-cmake-wrapper.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\tiff</Filter>
+    </None>
+    <None Include="F:\mcs2\openMVS\vcpkg_installed\x64-windows\share\zlib\vcpkg-cmake-wrapper.cmake">
+      <Filter>Buildsystem Input Files\vcpkg_installed\x64-windows\share\zlib</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{BF583367-39C1-3A51-806E-C399B79303AB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{78C719B4-599D-3F55-8D50-3B747F2CDFB9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Buildsystem Input Files">
+      <UniqueIdentifier>{C627B457-151F-35B3-9C2C-5F6B14AB5F8B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Buildsystem Input Files\apps">
+      <UniqueIdentifier>{A8083B0C-C6F5-3160-AD8A-AB9BD6E9386C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Buildsystem Input Files\apps\TextureMesh">
+      <UniqueIdentifier>{E31C84C4-259A-36DD-ABF3-61989EAAA15F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Buildsystem Input Files\build">
+      <UniqueIdentifier>{E34AB0ED-0EF6-35AB-9AA6-DDC855EA5FE3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Buildsystem Input Files\build\Modules">
+      <UniqueIdentifier>{8826D22E-1218-3FCD-8006-7B1431A92508}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Buildsystem Input Files\build\Templates">
+      <UniqueIdentifier>{8A572106-AE13-319E-AF5E-F76A64E00528}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Buildsystem Input Files\docs">
+      <UniqueIdentifier>{9109293B-81DF-39A1-BC53-4722CE8F1EE7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Buildsystem Input Files\libs">
+      <UniqueIdentifier>{AD5BBBE8-F67B-36A4-927A-D66E0086637D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Buildsystem Input Files\libs\Common">
+      <UniqueIdentifier>{BD5621C2-08F7-33A4-8B5C-343772E44461}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Buildsystem Input Files\libs\IO">
+      <UniqueIdentifier>{01F6A9ED-9441-3BBF-A031-921FDAC89147}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Buildsystem Input Files\libs\MVS">
+      <UniqueIdentifier>{0546E991-7CB9-30FD-86D4-6D35518FBB42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Buildsystem Input Files\libs\Math">
+      <UniqueIdentifier>{B90F3BD7-9EA1-3BD0-BD64-0F406559BFCC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Buildsystem Input Files\vcpkg_installed\x64-windows\share\boost">
+      <UniqueIdentifier>{957FF5FB-D5EC-3674-A4EF-9D902AD15F3D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Buildsystem Input Files\vcpkg_installed\x64-windows\share\cgal">
+      <UniqueIdentifier>{1F350BA1-2E48-3379-9FCD-594154BCE1CA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Buildsystem Input Files\vcpkg_installed\x64-windows\share\eigen3">
+      <UniqueIdentifier>{8A648959-CA8C-34F6-A34E-CA1E674A00BB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Buildsystem Input Files\vcpkg_installed\x64-windows\share\imath">
+      <UniqueIdentifier>{9786B423-3F0C-3B37-9C5F-BDB03848D62B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Buildsystem Input Files\vcpkg_installed\x64-windows\share\jpeg">
+      <UniqueIdentifier>{6E198E5E-6D2D-3E0F-9AB1-0CA13C68A2CD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Buildsystem Input Files\vcpkg_installed\x64-windows\share\libdeflate">
+      <UniqueIdentifier>{97745AEE-FBAD-3BD3-8978-9C2CC07D7FC2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Buildsystem Input Files\vcpkg_installed\x64-windows\share\opencv">
+      <UniqueIdentifier>{6FCEB1E8-C880-3B88-BA74-2F29D2142605}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Buildsystem Input Files\vcpkg_installed\x64-windows\share\openexr">
+      <UniqueIdentifier>{123BF7EB-7247-3D05-B0D4-5F58E80DE359}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Buildsystem Input Files\vcpkg_installed\x64-windows\share\png">
+      <UniqueIdentifier>{798D2262-EA85-3E1D-B7C8-074CA3A36259}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Buildsystem Input Files\vcpkg_installed\x64-windows\share\protobuf">
+      <UniqueIdentifier>{FA496BE8-067C-3634-BE96-35504DC2CD81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Buildsystem Input Files\vcpkg_installed\x64-windows\share\python3">
+      <UniqueIdentifier>{C56C7D99-DFC1-37F7-B3D1-D162BC2688C5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Buildsystem Input Files\vcpkg_installed\x64-windows\share\quirc">
+      <UniqueIdentifier>{45E25590-A1A3-3F6D-8B86-9181D61DD787}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Buildsystem Input Files\vcpkg_installed\x64-windows\share\tiff">
+      <UniqueIdentifier>{AE42353D-B958-3DD3-A838-A75F4C589327}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Buildsystem Input Files\vcpkg_installed\x64-windows\share\zlib">
+      <UniqueIdentifier>{C7ABA080-8740-3417-9419-5D483271974A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

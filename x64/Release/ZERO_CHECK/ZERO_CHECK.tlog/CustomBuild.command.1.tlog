@@ -1,0 +1,10 @@
+^F:\MCS2\OPENMVS\CMAKEFILES\2E884302F8609932DDEE32D87A557963\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SF:/mcs2/openMVS -BF:/mcs2/openMVS --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file F:/mcs2/openMVS/OpenMVS.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,101 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.27/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in
+C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeCUDAInformation.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeCXXInformation.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDependentOption.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeGenericSystem.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/CMakePackageConfigHelpers.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeParseImplicitLinkInfo.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeRCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/CheckCXXCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/CheckCXXSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/CheckLibraryExists.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/Compiler/MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/Compiler/MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/Compiler/MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/Compiler/NVIDIA-CUDA.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/FindBoost.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/FindCUDA.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/FindCUDA/select_compute_arch.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/FindOpenGL.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/FindOpenMP.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/FindPython/Support.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/FindPython3.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/FindTIFF.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/FindThreads.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/Internal/CheckCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/Internal/CheckFlagCommonConfig.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/Platform/Windows-MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/Platform/Windows-NVIDIA-CUDA.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/Platform/Windows.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/SelectLibraryConfigurations.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/WriteBasicConfigVersionFile.cmake
+C:/src/vcpkg/scripts/buildsystems/vcpkg.cmake
+F:/mcs2/openMVS/CMakeFiles/3.27.0-rc3/CMakeCCompiler.cmake
+F:/mcs2/openMVS/CMakeFiles/3.27.0-rc3/CMakeCUDACompiler.cmake
+F:/mcs2/openMVS/CMakeFiles/3.27.0-rc3/CMakeCXXCompiler.cmake
+F:/mcs2/openMVS/CMakeFiles/3.27.0-rc3/CMakeRCCompiler.cmake
+F:/mcs2/openMVS/CMakeFiles/3.27.0-rc3/CMakeSystem.cmake
+F:/mcs2/openMVS/CMakeLists.txt
+F:/mcs2/openMVS/build/Modules/FindBREAKPAD.cmake
+F:/mcs2/openMVS/build/Modules/FindEigen3.cmake
+F:/mcs2/openMVS/build/Templates/ConfigLocal.h.in
+F:/mcs2/openMVS/build/Templates/OpenMVSConfig.cmake.in
+F:/mcs2/openMVS/build/Templates/cmake_uninstall.cmake.in
+F:/mcs2/openMVS/build/Utils.cmake
+F:/mcs2/openMVS/vcpkg.json
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/boost/vcpkg-cmake-wrapper.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/eigen3/Eigen3Config.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/eigen3/Eigen3ConfigVersion.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/eigen3/Eigen3Targets.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/imath/ImathConfig.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/imath/ImathConfigVersion.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/imath/ImathTargets-debug.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/imath/ImathTargets-release.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/imath/ImathTargets.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/libdeflate/libdeflate-config-version.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/libdeflate/libdeflate-config.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/libdeflate/libdeflate-targets-debug.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/libdeflate/libdeflate-targets-release.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/libdeflate/libdeflate-targets.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/opencv/OpenCVConfig-version.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/opencv/OpenCVConfig.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/opencv/OpenCVModules-debug.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/opencv/OpenCVModules-release.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/opencv/OpenCVModules.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/openexr/OpenEXRConfig.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/openexr/OpenEXRConfigVersion.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/openexr/OpenEXRTargets-debug.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/openexr/OpenEXRTargets-release.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/openexr/OpenEXRTargets.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/protobuf/protobuf-config-version.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/protobuf/protobuf-config.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/protobuf/protobuf-module.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/protobuf/protobuf-options.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/protobuf/protobuf-targets-debug.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/protobuf/protobuf-targets-release.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/protobuf/protobuf-targets.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/protobuf/vcpkg-cmake-wrapper.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/python3/vcpkg-cmake-wrapper.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/quirc/quirc-config-debug.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/quirc/quirc-config-release.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/quirc/quirc-config.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/tiff/vcpkg-cmake-wrapper.cmake

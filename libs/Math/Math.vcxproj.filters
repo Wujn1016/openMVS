@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="F:\mcs2\openMVS\libs\Math\CMakeFiles\Math.dir\cmake_pch.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\mcs2\openMVS\libs\Math\Common.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\mcs2\openMVS\libs\Math\SimilarityTransform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\mcs2\openMVS\libs\Math\IBFS\IBFS.cpp">
+      <Filter>IBFS</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\mcs2\openMVS\libs\Math\LMFit\lmmin.cpp">
+      <Filter>LMFit</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="F:\mcs2\openMVS\libs\Math\Common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\mcs2\openMVS\libs\Math\LBP.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\mcs2\openMVS\libs\Math\RobustNorms.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\mcs2\openMVS\libs\Math\SimilarityTransform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\mcs2\openMVS\libs\Math\IBFS\IBFS.h">
+      <Filter>IBFS</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\mcs2\openMVS\libs\Math\LMFit\lmmin.h">
+      <Filter>LMFit</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\mcs2\openMVS\libs\Math\TRWS\MRFEnergy.h">
+      <Filter>TRWS</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\mcs2\openMVS\libs\Math\TRWS\MRFEnergy.inl">
+      <Filter>TRWS</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\mcs2\openMVS\libs\Math\TRWS\instances.h">
+      <Filter>TRWS</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\mcs2\openMVS\libs\Math\TRWS\minimize.inl">
+      <Filter>TRWS</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\mcs2\openMVS\libs\Math\TRWS\ordering.inl">
+      <Filter>TRWS</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\mcs2\openMVS\libs\Math\TRWS\treeProbabilities.inl">
+      <Filter>TRWS</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\mcs2\openMVS\libs\Math\TRWS\typeBinary.h">
+      <Filter>TRWS</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\mcs2\openMVS\libs\Math\TRWS\typeBinaryFast.h">
+      <Filter>TRWS</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\mcs2\openMVS\libs\Math\TRWS\typeGeneral.h">
+      <Filter>TRWS</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\mcs2\openMVS\libs\Math\TRWS\typePotts.h">
+      <Filter>TRWS</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\mcs2\openMVS\libs\Math\TRWS\typeTruncatedLinear.h">
+      <Filter>TRWS</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\mcs2\openMVS\libs\Math\TRWS\typeTruncatedLinear2D.h">
+      <Filter>TRWS</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\mcs2\openMVS\libs\Math\TRWS\typeTruncatedQuadratic.h">
+      <Filter>TRWS</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\mcs2\openMVS\libs\Math\TRWS\typeTruncatedQuadratic2D.h">
+      <Filter>TRWS</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\mcs2\openMVS\libs\Math\CMakeFiles\Math.dir\Debug\cmake_pch.hxx">
+      <Filter>Precompile Header File</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\mcs2\openMVS\libs\Math\CMakeFiles\Math.dir\Release\cmake_pch.hxx">
+      <Filter>Precompile Header File</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\mcs2\openMVS\libs\Math\CMakeFiles\Math.dir\MinSizeRel\cmake_pch.hxx">
+      <Filter>Precompile Header File</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\mcs2\openMVS\libs\Math\CMakeFiles\Math.dir\RelWithDebInfo\cmake_pch.hxx">
+      <Filter>Precompile Header File</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\mcs2\openMVS\libs\Math\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{78C719B4-599D-3F55-8D50-3B747F2CDFB9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IBFS">
+      <UniqueIdentifier>{3304E038-8A46-378C-BEDD-442D9D386686}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LMFit">
+      <UniqueIdentifier>{F6D82277-CE6E-3A4D-BB07-E90EE8C17910}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Precompile Header File">
+      <UniqueIdentifier>{389EFE18-5A31-3151-AA47-AEFA13EAD518}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{A10ED4B6-28E6-3C63-9014-0F0576A725D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TRWS">
+      <UniqueIdentifier>{221FCD05-8596-31A4-AC8B-6425986938FC}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

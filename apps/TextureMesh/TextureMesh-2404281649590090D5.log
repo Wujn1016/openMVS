@@ -1,0 +1,13 @@
+16:49:59 [App     ] OpenMVS x64 v2.3.0
+16:49:59 [App     ] Build date: Apr 28 2024, 16:20:01
+16:49:59 [App     ] CPU: Intel(R) Core(TM) i7-10700F CPU @ 2.90GHz (16 cores)
+16:49:59 [App     ] RAM: 15.78GB Physical Memory 128.00TB Virtual Memory
+16:49:59 [App     ] OS: Windows 8 x64
+16:49:59 [App     ] Disk: 37.54GB (259.51GB) space
+16:49:59 [App     ] SSE & AVX compatible CPU & OS detected
+16:49:59 [App     ] Command line: TextureMesh
+16:49:59 [App     ] CUDA device 0 initialized: NVIDIA GeForce GTX 1650 (compute capability 7.5; memory 4.00GB)
+16:49:59 [App     ] Camera model loaded: platform 0; camera  0; f 8.977x8.977; poses 351
+16:49:59 [App     ] Scene loaded from interface format (33ms):
+	351 images (351 calibrated) with a total of 267.36 MPixels (0.76 MPixels/image)
+	4428 points, 0 vertices, 0 faces

@@ -1,0 +1,11 @@
+﻿  cmake_pch.cxx
+  Common.cpp
+  ConfigTable.cpp
+  EventQueue.cpp
+  Log.cpp
+  SML.cpp
+  Timer.cpp
+  Types.cpp
+  Util.cpp
+  UtilCUDA.cpp
+  Common.vcxproj -> F:\mcs2\openMVS\lib\vc17\x64\Release\Common.lib

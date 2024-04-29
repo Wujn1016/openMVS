@@ -1,0 +1,30 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeParseArguments.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/FindBoost.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/FindPackageMessage.cmake
+F:/mcs2/openMVS/build/Modules/FindVCG.cmake
+F:/mcs2/openMVS/libs/MVS/CMakeLists.txt
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/boost/vcpkg-cmake-wrapper.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/cgal/CGALConfig-installation-dirs.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/cgal/CGALConfig.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/cgal/CGALConfigBuildVersion.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/cgal/CGALConfigVersion.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/cgal/CGAL_Common.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/cgal/CGAL_CreateSingleSourceCGALProgram.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/cgal/CGAL_GeneratorSpecificSettings.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/cgal/CGAL_Macros.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/cgal/CGAL_SCM.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/cgal/CGAL_SetupBoost.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/cgal/CGAL_SetupCGALDependencies.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/cgal/CGAL_SetupGMP.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/cgal/CGAL_SetupVLD.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/cgal/CGAL_TweakFindBoost.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/cgal/CGAL_VersionUtils.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/cgal/CGAL_add_test.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/cgal/CGAL_enable_end_of_configuration_hook.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/cgal/CGAL_setup_target_dependencies.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/cgal/CGAL_target_use_TBB.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/cgal/FindGMP.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/cgal/FindGMPXX.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/cgal/FindMPFR.cmake

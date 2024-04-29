@@ -1,0 +1,6 @@
+﻿  cmake_pch.cxx
+  Common.cpp
+  SimilarityTransform.cpp
+  IBFS.cpp
+  lmmin.cpp
+  Math.vcxproj -> F:\mcs2\openMVS\lib\vc17\x64\Release\Math.lib

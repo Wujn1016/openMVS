@@ -1,0 +1,10 @@
+F:\mcs2\openMVS\libs\Common\CMakeFiles\Common.dir\cmake_pch.cxx;F:\mcs2\openMVS\libs\Common\Common.dir\Release\cmake_pch.obj
+F:\mcs2\openMVS\libs\Common\Common.cpp;F:\mcs2\openMVS\libs\Common\Common.dir\Release\Common.obj
+F:\mcs2\openMVS\libs\Common\ConfigTable.cpp;F:\mcs2\openMVS\libs\Common\Common.dir\Release\ConfigTable.obj
+F:\mcs2\openMVS\libs\Common\EventQueue.cpp;F:\mcs2\openMVS\libs\Common\Common.dir\Release\EventQueue.obj
+F:\mcs2\openMVS\libs\Common\Log.cpp;F:\mcs2\openMVS\libs\Common\Common.dir\Release\Log.obj
+F:\mcs2\openMVS\libs\Common\SML.cpp;F:\mcs2\openMVS\libs\Common\Common.dir\Release\SML.obj
+F:\mcs2\openMVS\libs\Common\Timer.cpp;F:\mcs2\openMVS\libs\Common\Common.dir\Release\Timer.obj
+F:\mcs2\openMVS\libs\Common\Types.cpp;F:\mcs2\openMVS\libs\Common\Common.dir\Release\Types.obj
+F:\mcs2\openMVS\libs\Common\Util.cpp;F:\mcs2\openMVS\libs\Common\Common.dir\Release\Util.obj
+F:\mcs2\openMVS\libs\Common\UtilCUDA.cpp;F:\mcs2\openMVS\libs\Common\Common.dir\Release\UtilCUDA.obj

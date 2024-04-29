@@ -1,0 +1,21 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/CheckLibraryExists.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/FindThreads.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/SelectLibraryConfigurations.cmake
+F:/mcs2/openMVS/apps/Viewer/CMakeLists.txt
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/glew/CopyImportedTargetProperties.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/glew/glew-config.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/glew/glew-targets-debug.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/glew/glew-targets-release.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/glew/glew-targets.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/glew/vcpkg-cmake-wrapper.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/glfw3/glfw3Config.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/glfw3/glfw3ConfigVersion.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/glfw3/glfw3Targets-debug.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/glfw3/glfw3Targets-release.cmake
+F:/mcs2/openMVS/vcpkg_installed/x64-windows/share/glfw3/glfw3Targets.cmake

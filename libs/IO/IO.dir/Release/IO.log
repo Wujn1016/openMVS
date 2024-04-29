@@ -1,0 +1,14 @@
+﻿  cmake_pch.cxx
+  Common.cpp
+  Image.cpp
+  ImageBMP.cpp
+  ImageDDS.cpp
+  ImageJPG.cpp
+  ImagePNG.cpp
+  ImageSCI.cpp
+  ImageTGA.cpp
+  ImageTIFF.cpp
+  OBJ.cpp
+  PLY.cpp
+  TinyXML2.cpp
+  IO.vcxproj -> F:\mcs2\openMVS\lib\vc17\x64\Release\IO.lib

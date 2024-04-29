@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0505AFBF-2306-350A-87F5-4EAFB7E0E522}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <VcpkgEnabled>false</VcpkgEnabled>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>InterfacePolycam</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 11.7.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="do_not_import_user.props" Condition="exists('do_not_import_user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\mcs2\openMVS\bin\vc17\x64\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">InterfacePolycam.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">InterfacePolycam</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\mcs2\openMVS\bin\vc17\x64\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">InterfacePolycam.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">InterfacePolycam</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\mcs2\openMVS\bin\vc17\x64\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">InterfacePolycam.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">InterfacePolycam</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\mcs2\openMVS\bin\vc17\x64\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">InterfacePolycam.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">InterfacePolycam</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\include;F:\mcs2\openMVS\vcpkg_installed\x64-windows\include\python3.11;F:\mcs2\openMVS\vcpkg_installed\x64-windows\include;F:\mcs2\openMVS\vcpkg_installed\x64-windows\include\eigen3;F:\mcs2\openMVS;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj /Zm170 /Zc:__cplusplus /bigobj /Zm170 /Zc:__cplusplus</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4231;4251;4308;4396;4503;4661;4996;4231;4251;4308;4396;4503;4661;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_WIN32;_HAS_EXCEPTIONS=1;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_WIN32;_HAS_EXCEPTIONS=1;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\include;F:\mcs2\openMVS\vcpkg_installed\x64-windows\include\python3.11;F:\mcs2\openMVS\vcpkg_installed\x64-windows\include;F:\mcs2\openMVS\vcpkg_installed\x64-windows\include\eigen3;F:\mcs2\openMVS;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\include;F:\mcs2\openMVS\vcpkg_installed\x64-windows\include\python3.11;F:\mcs2\openMVS\vcpkg_installed\x64-windows\include;F:\mcs2\openMVS\vcpkg_installed\x64-windows\include\eigen3;F:\mcs2\openMVS;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/src/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary F:/mcs2/openMVS/bin/vc17/x64/Debug/InterfacePolycam.exe -installedDir F:/mcs2/openMVS/vcpkg_installed/x64-windows/debug/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\..\lib\vc17\x64\Debug\MVS.lib;..\..\vcpkg_installed\x64-windows\debug\lib\python311_d.lib;..\..\lib\vc17\x64\Debug\Math.lib;..\..\lib\vc17\x64\Debug\IO.lib;..\..\lib\vc17\x64\Debug\Common.lib;..\..\vcpkg_installed\x64-windows\debug\lib\boost_iostreams-vc140-mt-gd.lib;..\..\vcpkg_installed\x64-windows\debug\lib\boost_program_options-vc140-mt-gd.lib;..\..\vcpkg_installed\x64-windows\debug\lib\boost_system-vc140-mt-gd.lib;..\..\vcpkg_installed\x64-windows\debug\lib\boost_serialization-vc140-mt-gd.lib;..\..\vcpkg_installed\x64-windows\debug\lib\boost_python311-vc140-mt-gd.lib;..\..\vcpkg_installed\x64-windows\debug\lib\boost_regex-vc140-mt-gd.lib;..\..\vcpkg_installed\x64-windows\debug\lib\opencv_highgui4d.lib;..\..\vcpkg_installed\x64-windows\debug\lib\opencv_ml4d.lib;..\..\vcpkg_installed\x64-windows\debug\lib\opencv_objdetect4d.lib;..\..\vcpkg_installed\x64-windows\debug\lib\opencv_photo4d.lib;..\..\vcpkg_installed\x64-windows\debug\lib\opencv_stitching4d.lib;..\..\vcpkg_installed\x64-windows\debug\lib\opencv_video4d.lib;..\..\vcpkg_installed\x64-windows\debug\lib\opencv_calib3d4d.lib;..\..\vcpkg_installed\x64-windows\debug\lib\opencv_dnn4d.lib;..\..\vcpkg_installed\x64-windows\debug\lib\opencv_features2d4d.lib;..\..\vcpkg_installed\x64-windows\debug\lib\opencv_flann4d.lib;..\..\vcpkg_installed\x64-windows\debug\lib\opencv_videoio4d.lib;..\..\vcpkg_installed\x64-windows\debug\lib\opencv_imgcodecs4d.lib;..\..\vcpkg_installed\x64-windows\debug\lib\opencv_imgproc4d.lib;..\..\vcpkg_installed\x64-windows\debug\lib\opencv_core4d.lib;..\..\vcpkg_installed\x64-windows\debug\lib\libpng16d.lib;..\..\vcpkg_installed\x64-windows\debug\lib\zlibd.lib;..\..\vcpkg_installed\x64-windows\debug\lib\jpeg.lib;..\..\vcpkg_installed\x64-windows\debug\lib\tiffd.lib;..\..\vcpkg_installed\x64-windows\debug\lib\gmpxx.lib;..\..\vcpkg_installed\x64-windows\debug\lib\mpfr.lib;..\..\vcpkg_installed\x64-windows\debug\lib\gmp.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\lib\x64\cuda.lib;cudadevrt.lib;cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>F:/mcs2/openMVS/vcpkg_installed/x64-windows/lib;F:/mcs2/openMVS/vcpkg_installed/x64-windows/lib/$(Configuration);F:/mcs2/openMVS/vcpkg_installed/x64-windows/debug/lib;F:/mcs2/openMVS/vcpkg_installed/x64-windows/debug/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/mcs2/openMVS/bin/vc17/x64/Debug/InterfacePolycam.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/mcs2/openMVS/bin/vc17/x64/Debug/InterfacePolycam.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <CudaLink>
+      <AdditionalOptions>-forward-unknown-to-host-compiler -Wno-deprecated-gpu-targets </AdditionalOptions>
+      <PerformDeviceLink>false</PerformDeviceLink>
+    </CudaLink>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\include;F:\mcs2\openMVS\vcpkg_installed\x64-windows\include\python3.11;F:\mcs2\openMVS\vcpkg_installed\x64-windows\include;F:\mcs2\openMVS\vcpkg_installed\x64-windows\include\eigen3;F:\mcs2\openMVS;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj /Zm170 /Zc:__cplusplus /bigobj /Zm170 /Zc:__cplusplus</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4231;4251;4308;4396;4503;4661;4996;4231;4251;4308;4396;4503;4661;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;_WIN32;_HAS_EXCEPTIONS=1;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;_WIN32;_HAS_EXCEPTIONS=1;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\include;F:\mcs2\openMVS\vcpkg_installed\x64-windows\include\python3.11;F:\mcs2\openMVS\vcpkg_installed\x64-windows\include;F:\mcs2\openMVS\vcpkg_installed\x64-windows\include\eigen3;F:\mcs2\openMVS;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\include;F:\mcs2\openMVS\vcpkg_installed\x64-windows\include\python3.11;F:\mcs2\openMVS\vcpkg_installed\x64-windows\include;F:\mcs2\openMVS\vcpkg_installed\x64-windows\include\eigen3;F:\mcs2\openMVS;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/src/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary F:/mcs2/openMVS/bin/vc17/x64/Release/InterfacePolycam.exe -installedDir F:/mcs2/openMVS/vcpkg_installed/x64-windows/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\..\lib\vc17\x64\Release\MVS.lib;..\..\vcpkg_installed\x64-windows\lib\python311.lib;..\..\lib\vc17\x64\Release\Math.lib;..\..\lib\vc17\x64\Release\IO.lib;..\..\lib\vc17\x64\Release\Common.lib;..\..\vcpkg_installed\x64-windows\lib\boost_iostreams-vc140-mt.lib;..\..\vcpkg_installed\x64-windows\lib\boost_program_options-vc140-mt.lib;..\..\vcpkg_installed\x64-windows\lib\boost_system-vc140-mt.lib;..\..\vcpkg_installed\x64-windows\lib\boost_serialization-vc140-mt.lib;..\..\vcpkg_installed\x64-windows\lib\boost_python311-vc140-mt.lib;..\..\vcpkg_installed\x64-windows\lib\boost_regex-vc140-mt.lib;..\..\vcpkg_installed\x64-windows\lib\opencv_highgui4.lib;..\..\vcpkg_installed\x64-windows\lib\opencv_ml4.lib;..\..\vcpkg_installed\x64-windows\lib\opencv_objdetect4.lib;..\..\vcpkg_installed\x64-windows\lib\opencv_photo4.lib;..\..\vcpkg_installed\x64-windows\lib\opencv_stitching4.lib;..\..\vcpkg_installed\x64-windows\lib\opencv_video4.lib;..\..\vcpkg_installed\x64-windows\lib\opencv_calib3d4.lib;..\..\vcpkg_installed\x64-windows\lib\opencv_dnn4.lib;..\..\vcpkg_installed\x64-windows\lib\opencv_features2d4.lib;..\..\vcpkg_installed\x64-windows\lib\opencv_flann4.lib;..\..\vcpkg_installed\x64-windows\lib\opencv_videoio4.lib;..\..\vcpkg_installed\x64-windows\lib\opencv_imgcodecs4.lib;..\..\vcpkg_installed\x64-windows\lib\opencv_imgproc4.lib;..\..\vcpkg_installed\x64-windows\lib\opencv_core4.lib;..\..\vcpkg_installed\x64-windows\lib\libpng16.lib;..\..\vcpkg_installed\x64-windows\lib\zlib.lib;..\..\vcpkg_installed\x64-windows\lib\jpeg.lib;..\..\vcpkg_installed\x64-windows\lib\tiff.lib;..\..\vcpkg_installed\x64-windows\debug\lib\gmpxx.lib;..\..\vcpkg_installed\x64-windows\debug\lib\mpfr.lib;..\..\vcpkg_installed\x64-windows\debug\lib\gmp.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\lib\x64\cuda.lib;cudadevrt.lib;cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>F:/mcs2/openMVS/vcpkg_installed/x64-windows/lib;F:/mcs2/openMVS/vcpkg_installed/x64-windows/lib/$(Configuration);F:/mcs2/openMVS/vcpkg_installed/x64-windows/debug/lib;F:/mcs2/openMVS/vcpkg_installed/x64-windows/debug/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/mcs2/openMVS/bin/vc17/x64/Release/InterfacePolycam.lib</ImportLibrary>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <ProgramDataBaseFile>F:/mcs2/openMVS/bin/vc17/x64/Release/InterfacePolycam.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <CudaLink>
+      <AdditionalOptions>-forward-unknown-to-host-compiler -Wno-deprecated-gpu-targets </AdditionalOptions>
+      <PerformDeviceLink>false</PerformDeviceLink>
+    </CudaLink>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\include;F:\mcs2\openMVS\vcpkg_installed\x64-windows\include\python3.11;F:\mcs2\openMVS\vcpkg_installed\x64-windows\include;F:\mcs2\openMVS\vcpkg_installed\x64-windows\include\eigen3;F:\mcs2\openMVS;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj /Zm170 /Zc:__cplusplus /bigobj /Zm170 /Zc:__cplusplus</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4231;4251;4308;4396;4503;4661;4996;4231;4251;4308;4396;4503;4661;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;_WIN32;_HAS_EXCEPTIONS=1;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;_WIN32;_HAS_EXCEPTIONS=1;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\include;F:\mcs2\openMVS\vcpkg_installed\x64-windows\include\python3.11;F:\mcs2\openMVS\vcpkg_installed\x64-windows\include;F:\mcs2\openMVS\vcpkg_installed\x64-windows\include\eigen3;F:\mcs2\openMVS;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\include;F:\mcs2\openMVS\vcpkg_installed\x64-windows\include\python3.11;F:\mcs2\openMVS\vcpkg_installed\x64-windows\include;F:\mcs2\openMVS\vcpkg_installed\x64-windows\include\eigen3;F:\mcs2\openMVS;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/src/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary F:/mcs2/openMVS/bin/vc17/x64/MinSizeRel/InterfacePolycam.exe -installedDir F:/mcs2/openMVS/vcpkg_installed/x64-windows/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\..\lib\vc17\x64\MinSizeRel\MVS.lib;..\..\vcpkg_installed\x64-windows\lib\python311.lib;..\..\lib\vc17\x64\MinSizeRel\Math.lib;..\..\lib\vc17\x64\MinSizeRel\IO.lib;..\..\lib\vc17\x64\MinSizeRel\Common.lib;..\..\vcpkg_installed\x64-windows\lib\boost_iostreams-vc140-mt.lib;..\..\vcpkg_installed\x64-windows\lib\boost_program_options-vc140-mt.lib;..\..\vcpkg_installed\x64-windows\lib\boost_system-vc140-mt.lib;..\..\vcpkg_installed\x64-windows\lib\boost_serialization-vc140-mt.lib;..\..\vcpkg_installed\x64-windows\lib\boost_python311-vc140-mt.lib;..\..\vcpkg_installed\x64-windows\lib\boost_regex-vc140-mt.lib;..\..\vcpkg_installed\x64-windows\lib\opencv_highgui4.lib;..\..\vcpkg_installed\x64-windows\lib\opencv_ml4.lib;..\..\vcpkg_installed\x64-windows\lib\opencv_objdetect4.lib;..\..\vcpkg_installed\x64-windows\lib\opencv_photo4.lib;..\..\vcpkg_installed\x64-windows\lib\opencv_stitching4.lib;..\..\vcpkg_installed\x64-windows\lib\opencv_video4.lib;..\..\vcpkg_installed\x64-windows\lib\opencv_calib3d4.lib;..\..\vcpkg_installed\x64-windows\lib\opencv_dnn4.lib;..\..\vcpkg_installed\x64-windows\lib\opencv_features2d4.lib;..\..\vcpkg_installed\x64-windows\lib\opencv_flann4.lib;..\..\vcpkg_installed\x64-windows\lib\opencv_videoio4.lib;..\..\vcpkg_installed\x64-windows\lib\opencv_imgcodecs4.lib;..\..\vcpkg_installed\x64-windows\lib\opencv_imgproc4.lib;..\..\vcpkg_installed\x64-windows\lib\opencv_core4.lib;..\..\vcpkg_installed\x64-windows\lib\libpng16.lib;..\..\vcpkg_installed\x64-windows\lib\zlib.lib;..\..\vcpkg_installed\x64-windows\lib\jpeg.lib;..\..\vcpkg_installed\x64-windows\lib\tiff.lib;..\..\vcpkg_installed\x64-windows\debug\lib\gmpxx.lib;..\..\vcpkg_installed\x64-windows\debug\lib\mpfr.lib;..\..\vcpkg_installed\x64-windows\debug\lib\gmp.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\lib\x64\cuda.lib;cudadevrt.lib;cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>F:/mcs2/openMVS/vcpkg_installed/x64-windows/lib;F:/mcs2/openMVS/vcpkg_installed/x64-windows/lib/$(Configuration);F:/mcs2/openMVS/vcpkg_installed/x64-windows/debug/lib;F:/mcs2/openMVS/vcpkg_installed/x64-windows/debug/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/mcs2/openMVS/bin/vc17/x64/MinSizeRel/InterfacePolycam.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/mcs2/openMVS/bin/vc17/x64/MinSizeRel/InterfacePolycam.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <CudaLink>
+      <AdditionalOptions>-forward-unknown-to-host-compiler -Wno-deprecated-gpu-targets </AdditionalOptions>
+      <PerformDeviceLink>false</PerformDeviceLink>
+    </CudaLink>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\include;F:\mcs2\openMVS\vcpkg_installed\x64-windows\include\python3.11;F:\mcs2\openMVS\vcpkg_installed\x64-windows\include;F:\mcs2\openMVS\vcpkg_installed\x64-windows\include\eigen3;F:\mcs2\openMVS;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj /Zm170 /Zc:__cplusplus /bigobj /Zm170 /Zc:__cplusplus</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4231;4251;4308;4396;4503;4661;4996;4231;4251;4308;4396;4503;4661;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;_WIN32;_HAS_EXCEPTIONS=1;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;_WIN32;_HAS_EXCEPTIONS=1;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\include;F:\mcs2\openMVS\vcpkg_installed\x64-windows\include\python3.11;F:\mcs2\openMVS\vcpkg_installed\x64-windows\include;F:\mcs2\openMVS\vcpkg_installed\x64-windows\include\eigen3;F:\mcs2\openMVS;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\include;F:\mcs2\openMVS\vcpkg_installed\x64-windows\include\python3.11;F:\mcs2\openMVS\vcpkg_installed\x64-windows\include;F:\mcs2\openMVS\vcpkg_installed\x64-windows\include\eigen3;F:\mcs2\openMVS;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/src/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary F:/mcs2/openMVS/bin/vc17/x64/RelWithDebInfo/InterfacePolycam.exe -installedDir F:/mcs2/openMVS/vcpkg_installed/x64-windows/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\..\lib\vc17\x64\RelWithDebInfo\MVS.lib;..\..\vcpkg_installed\x64-windows\lib\python311.lib;..\..\lib\vc17\x64\RelWithDebInfo\Math.lib;..\..\lib\vc17\x64\RelWithDebInfo\IO.lib;..\..\lib\vc17\x64\RelWithDebInfo\Common.lib;..\..\vcpkg_installed\x64-windows\lib\boost_iostreams-vc140-mt.lib;..\..\vcpkg_installed\x64-windows\lib\boost_program_options-vc140-mt.lib;..\..\vcpkg_installed\x64-windows\lib\boost_system-vc140-mt.lib;..\..\vcpkg_installed\x64-windows\lib\boost_serialization-vc140-mt.lib;..\..\vcpkg_installed\x64-windows\lib\boost_python311-vc140-mt.lib;..\..\vcpkg_installed\x64-windows\lib\boost_regex-vc140-mt.lib;..\..\vcpkg_installed\x64-windows\lib\opencv_highgui4.lib;..\..\vcpkg_installed\x64-windows\lib\opencv_ml4.lib;..\..\vcpkg_installed\x64-windows\lib\opencv_objdetect4.lib;..\..\vcpkg_installed\x64-windows\lib\opencv_photo4.lib;..\..\vcpkg_installed\x64-windows\lib\opencv_stitching4.lib;..\..\vcpkg_installed\x64-windows\lib\opencv_video4.lib;..\..\vcpkg_installed\x64-windows\lib\opencv_calib3d4.lib;..\..\vcpkg_installed\x64-windows\lib\opencv_dnn4.lib;..\..\vcpkg_installed\x64-windows\lib\opencv_features2d4.lib;..\..\vcpkg_installed\x64-windows\lib\opencv_flann4.lib;..\..\vcpkg_installed\x64-windows\lib\opencv_videoio4.lib;..\..\vcpkg_installed\x64-windows\lib\opencv_imgcodecs4.lib;..\..\vcpkg_installed\x64-windows\lib\opencv_imgproc4.lib;..\..\vcpkg_installed\x64-windows\lib\opencv_core4.lib;..\..\vcpkg_installed\x64-windows\lib\libpng16.lib;..\..\vcpkg_installed\x64-windows\lib\zlib.lib;..\..\vcpkg_installed\x64-windows\lib\jpeg.lib;..\..\vcpkg_installed\x64-windows\lib\tiff.lib;..\..\vcpkg_installed\x64-windows\debug\lib\gmpxx.lib;..\..\vcpkg_installed\x64-windows\debug\lib\mpfr.lib;..\..\vcpkg_installed\x64-windows\debug\lib\gmp.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\lib\x64\cuda.lib;cudadevrt.lib;cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>F:/mcs2/openMVS/vcpkg_installed/x64-windows/lib;F:/mcs2/openMVS/vcpkg_installed/x64-windows/lib/$(Configuration);F:/mcs2/openMVS/vcpkg_installed/x64-windows/debug/lib;F:/mcs2/openMVS/vcpkg_installed/x64-windows/debug/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/mcs2/openMVS/bin/vc17/x64/RelWithDebInfo/InterfacePolycam.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/mcs2/openMVS/bin/vc17/x64/RelWithDebInfo/InterfacePolycam.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <CudaLink>
+      <AdditionalOptions>-forward-unknown-to-host-compiler -Wno-deprecated-gpu-targets </AdditionalOptions>
+      <PerformDeviceLink>false</PerformDeviceLink>
+    </CudaLink>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\mcs2\openMVS\apps\InterfacePolycam\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule F:/mcs2/openMVS/apps/InterfacePolycam/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SF:/mcs2/openMVS -BF:/mcs2/openMVS --check-stamp-file F:/mcs2/openMVS/apps/InterfacePolycam/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\mcs2\openMVS\apps\InterfacePolycam\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule F:/mcs2/openMVS/apps/InterfacePolycam/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SF:/mcs2/openMVS -BF:/mcs2/openMVS --check-stamp-file F:/mcs2/openMVS/apps/InterfacePolycam/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\mcs2\openMVS\apps\InterfacePolycam\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule F:/mcs2/openMVS/apps/InterfacePolycam/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SF:/mcs2/openMVS -BF:/mcs2/openMVS --check-stamp-file F:/mcs2/openMVS/apps/InterfacePolycam/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\mcs2\openMVS\apps\InterfacePolycam\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule F:/mcs2/openMVS/apps/InterfacePolycam/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SF:/mcs2/openMVS -BF:/mcs2/openMVS --check-stamp-file F:/mcs2/openMVS/apps/InterfacePolycam/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\mcs2\openMVS\apps\InterfacePolycam\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="F:\mcs2\openMVS\apps\InterfacePolycam\InterfacePolycam.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="F:\mcs2\openMVS\ZERO_CHECK.vcxproj">
+      <Project>{83591AF3-BBA5-3FAC-8569-5A36CA08BE43}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\mcs2\openMVS\libs\Common\Common.vcxproj">
+      <Project>{D78F74FD-EF1A-3458-B192-A2B2AEF91B50}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\mcs2\openMVS\libs\IO\IO.vcxproj">
+      <Project>{C14B9FD8-EC2A-33C4-92AA-736BF4E85881}</Project>
+      <Name>IO</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\mcs2\openMVS\libs\MVS\MVS.vcxproj">
+      <Project>{2C3A018D-5BD8-36CA-841C-FFB0D31E3DC1}</Project>
+      <Name>MVS</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\mcs2\openMVS\libs\Math\Math.vcxproj">
+      <Project>{C8B0C1C0-E0FA-3E47-80D2-0473E3C5234A}</Project>
+      <Name>Math</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 11.7.targets" />
+  </ImportGroup>
+</Project>
