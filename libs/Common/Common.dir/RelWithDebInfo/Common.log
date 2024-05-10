@@ -1,0 +1,12 @@
+﻿  cmake_pch.cxx
+  Common.cpp
+  ConfigTable.cpp
+  EventQueue.cpp
+  Log.cpp
+  SML.cpp
+  Timer.cpp
+  Types.cpp
+  Util.cpp
+  UtilCUDA.cpp
+  正在生成代码...
+  Common.vcxproj -> F:\mcs2\openMVS\lib\vc17\x64\RelWithDebInfo\Common.lib

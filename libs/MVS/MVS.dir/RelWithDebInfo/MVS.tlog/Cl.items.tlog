@@ -1,0 +1,17 @@
+F:\mcs2\openMVS\libs\MVS\CMakeFiles\MVS.dir\cmake_pch.cxx;f:\mcs2\openMVS\libs\MVS\MVS.dir\RelWithDebInfo\cmake_pch.obj
+F:\mcs2\openMVS\libs\MVS\Camera.cpp;f:\mcs2\openMVS\libs\MVS\MVS.dir\RelWithDebInfo\Camera.obj
+F:\mcs2\openMVS\libs\MVS\Common.cpp;f:\mcs2\openMVS\libs\MVS\MVS.dir\RelWithDebInfo\Common.obj
+F:\mcs2\openMVS\libs\MVS\DepthMap.cpp;f:\mcs2\openMVS\libs\MVS\MVS.dir\RelWithDebInfo\DepthMap.obj
+F:\mcs2\openMVS\libs\MVS\Image.cpp;f:\mcs2\openMVS\libs\MVS\MVS.dir\RelWithDebInfo\Image.obj
+F:\mcs2\openMVS\libs\MVS\Mesh.cpp;f:\mcs2\openMVS\libs\MVS\MVS.dir\RelWithDebInfo\Mesh.obj
+F:\mcs2\openMVS\libs\MVS\PatchMatchCUDA.cpp;f:\mcs2\openMVS\libs\MVS\MVS.dir\RelWithDebInfo\PatchMatchCUDA.cpp.obj
+F:\mcs2\openMVS\libs\MVS\Platform.cpp;f:\mcs2\openMVS\libs\MVS\MVS.dir\RelWithDebInfo\Platform.obj
+F:\mcs2\openMVS\libs\MVS\PointCloud.cpp;f:\mcs2\openMVS\libs\MVS\MVS.dir\RelWithDebInfo\PointCloud.obj
+F:\mcs2\openMVS\libs\MVS\RectsBinPack.cpp;f:\mcs2\openMVS\libs\MVS\MVS.dir\RelWithDebInfo\RectsBinPack.obj
+F:\mcs2\openMVS\libs\MVS\Scene.cpp;f:\mcs2\openMVS\libs\MVS\MVS.dir\RelWithDebInfo\Scene.obj
+F:\mcs2\openMVS\libs\MVS\SceneDensify.cpp;f:\mcs2\openMVS\libs\MVS\MVS.dir\RelWithDebInfo\SceneDensify.obj
+F:\mcs2\openMVS\libs\MVS\SceneReconstruct.cpp;f:\mcs2\openMVS\libs\MVS\MVS.dir\RelWithDebInfo\SceneReconstruct.obj
+F:\mcs2\openMVS\libs\MVS\SceneRefine.cpp;f:\mcs2\openMVS\libs\MVS\MVS.dir\RelWithDebInfo\SceneRefine.obj
+F:\mcs2\openMVS\libs\MVS\SceneRefineCUDA.cpp;f:\mcs2\openMVS\libs\MVS\MVS.dir\RelWithDebInfo\SceneRefineCUDA.obj
+F:\mcs2\openMVS\libs\MVS\SceneTexture.cpp;f:\mcs2\openMVS\libs\MVS\MVS.dir\RelWithDebInfo\SceneTexture.obj
+F:\mcs2\openMVS\libs\MVS\SemiGlobalMatcher.cpp;f:\mcs2\openMVS\libs\MVS\MVS.dir\RelWithDebInfo\SemiGlobalMatcher.obj

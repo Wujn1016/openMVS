@@ -1,0 +1,13 @@
+F:\mcs2\openMVS\libs\IO\CMakeFiles\IO.dir\cmake_pch.cxx;f:\mcs2\openMVS\libs\IO\IO.dir\RelWithDebInfo\cmake_pch.obj
+F:\mcs2\openMVS\libs\IO\Common.cpp;f:\mcs2\openMVS\libs\IO\IO.dir\RelWithDebInfo\Common.obj
+F:\mcs2\openMVS\libs\IO\Image.cpp;f:\mcs2\openMVS\libs\IO\IO.dir\RelWithDebInfo\Image.obj
+F:\mcs2\openMVS\libs\IO\ImageBMP.cpp;f:\mcs2\openMVS\libs\IO\IO.dir\RelWithDebInfo\ImageBMP.obj
+F:\mcs2\openMVS\libs\IO\ImageDDS.cpp;f:\mcs2\openMVS\libs\IO\IO.dir\RelWithDebInfo\ImageDDS.obj
+F:\mcs2\openMVS\libs\IO\ImageJPG.cpp;f:\mcs2\openMVS\libs\IO\IO.dir\RelWithDebInfo\ImageJPG.obj
+F:\mcs2\openMVS\libs\IO\ImagePNG.cpp;f:\mcs2\openMVS\libs\IO\IO.dir\RelWithDebInfo\ImagePNG.obj
+F:\mcs2\openMVS\libs\IO\ImageSCI.cpp;f:\mcs2\openMVS\libs\IO\IO.dir\RelWithDebInfo\ImageSCI.obj
+F:\mcs2\openMVS\libs\IO\ImageTGA.cpp;f:\mcs2\openMVS\libs\IO\IO.dir\RelWithDebInfo\ImageTGA.obj
+F:\mcs2\openMVS\libs\IO\ImageTIFF.cpp;f:\mcs2\openMVS\libs\IO\IO.dir\RelWithDebInfo\ImageTIFF.obj
+F:\mcs2\openMVS\libs\IO\OBJ.cpp;f:\mcs2\openMVS\libs\IO\IO.dir\RelWithDebInfo\OBJ.obj
+F:\mcs2\openMVS\libs\IO\PLY.cpp;f:\mcs2\openMVS\libs\IO\IO.dir\RelWithDebInfo\PLY.obj
+F:\mcs2\openMVS\libs\IO\TinyXML2.cpp;f:\mcs2\openMVS\libs\IO\IO.dir\RelWithDebInfo\TinyXML2.obj

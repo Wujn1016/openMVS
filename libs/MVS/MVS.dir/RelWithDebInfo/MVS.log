@@ -1,0 +1,4 @@
+﻿  SceneTexture.cpp
+F:\mcs2\openMVS\libs\MVS\SceneTexture.cpp(787,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+F:\mcs2\openMVS\libs\MVS\SceneTexture.cpp(2185,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  MVS.vcxproj -> F:\mcs2\openMVS\lib\vc17\x64\RelWithDebInfo\MVS.lib

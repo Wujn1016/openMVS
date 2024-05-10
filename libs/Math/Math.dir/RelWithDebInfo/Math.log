@@ -1,0 +1,7 @@
+﻿  cmake_pch.cxx
+  Common.cpp
+  IBFS.cpp
+  lmmin.cpp
+  SimilarityTransform.cpp
+  正在生成代码...
+  Math.vcxproj -> F:\mcs2\openMVS\lib\vc17\x64\RelWithDebInfo\Math.lib

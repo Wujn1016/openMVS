@@ -76,160 +76,250 @@ bool Scene::ImagesHaveNeighbors() const
 bool Scene::LoadInterface(const String &fileName)
 {
     TD_TIMER_STARTD();
-    Interface obj;
+    // Interface obj;
 
     // serialize in the current state
-    if (!ARCHIVE::SerializeLoad(obj, fileName))
-        return false;
+    /*if (!ARCHIVE::SerializeLoad(obj, fileName))
+        return false;*/
 
     // import platforms and cameras
-    ASSERT(!obj.platforms.empty());
-    platforms.reserve((uint32_t)obj.platforms.size());
-    for (const Interface::Platform &itPlatform : obj.platforms)
+    platforms.reserve((uint32_t)1);
+
+#if 0
+    std::string dir = "E:/image";
+    // 从文件中加载相机位姿
+    cv::Matx<double, 3, 3> cam_k;
+    std::vector<cv::Matx<double, 3, 3>> read_matrix_r;
+    std::vector<cv::Point3_<double>> read_matrix_t;
+    cv::FileStorage fsRead("F:/cam_pose_param.yml", cv::FileStorage::READ);
+    fsRead["K_Matrix"] >> cam_k;
+    // fsRead["cam_R_Matrix"] >> cam_r;
+    // fsRead["cam_T_Matrix"] >> cam_t;
+    fsRead["R_Matrix"] >> read_matrix_r;
+    fsRead["T_Matrix"] >> read_matrix_t;
+    fsRead.release();
+
+    Platform &platform = platforms.emplace_back();
+    platform.name      = "";
+    platform.cameras.reserve((uint32_t)read_matrix_r.size());
+
+    Platform::Camera &camera = platform.cameras.emplace_back();
+
+    // load and normalize K
+    camera.K = cam_k;
+    camera.K = camera.GetScaledK(REAL(1) / Camera::GetNormalizationScale(960, 832));
+
+    DEBUG_EXTRA("Camera model loaded: f %.3fx%.3f; poses %u",
+                camera.K(0, 0),
+                camera.K(1, 1),
+                read_matrix_r.size());
+
+    platform.poses.reserve((uint32_t)read_matrix_r.size());
+
+    for (int i = 0; i < read_matrix_r.size(); i++)
     {
-        Platform &platform = platforms.emplace_back();
-        platform.name      = itPlatform.name;
-        platform.cameras.reserve((uint32_t)itPlatform.cameras.size());
-        for (const Interface::Platform::Camera &itCamera : itPlatform.cameras)
-        {
-            Platform::Camera &camera = platform.cameras.emplace_back();
-            camera.K                 = itCamera.K;
-            camera.R                 = itCamera.R;
-            camera.C                 = itCamera.C;
-            if (!itCamera.IsNormalized())
-            {
-                // normalize K
-                ASSERT(itCamera.HasResolution());
-                camera.K = camera.GetScaledK(REAL(1)
-                                             / Camera::GetNormalizationScale(itCamera.width,
-                                                                             itCamera.height));
-            }
-            DEBUG_EXTRA("Camera model loaded: platform %u; camera %2u; f %.3fx%.3f; poses %u",
-                        platforms.size() - 1,
-                        platform.cameras.size() - 1,
-                        camera.K(0, 0),
-                        camera.K(1, 1),
-                        itPlatform.poses.size());
-        }
-        ASSERT(platform.cameras.size() == itPlatform.cameras.size());
-        platform.poses.reserve((uint32_t)itPlatform.poses.size());
-        for (const Interface::Platform::Pose &itPose : itPlatform.poses)
-        {
-            Platform::Pose &pose = platform.poses.emplace_back();
-            pose.R               = itPose.R;
-            pose.C               = itPose.C;
-        }
-        ASSERT(platform.poses.size() == itPlatform.poses.size());
+        Platform::Pose &pose = platform.poses.emplace_back();
+        pose.R               = read_matrix_r[i];
+        pose.C               = read_matrix_t[i];
     }
-    ASSERT(platforms.size() == obj.platforms.size());
-    if (platforms.empty())
-        return false;
+#else
+    // 从文件中加载相机位姿
+    std::string dir = "D:/texture_data";
+    std::stringstream k_stream;
+    k_stream << dir + "/"
+             << "calib/graycam_params.yml";
+    cv::Matx<double, 3, 3> cam_k;
+    cv::FileStorage fsRead(k_stream.str(), cv::FileStorage::READ);
+    fsRead["cam_matrix"] >> cam_k;
+    fsRead.release();
+
+    Platform &platform = platforms.emplace_back();
+    platform.name      = "";
+    platform.cameras.reserve((uint32_t)1);
+
+    Platform::Camera &camera = platform.cameras.emplace_back();
+
+    // load and normalize K
+    camera.K = cam_k;
+    camera.K = camera.GetScaledK(REAL(1) / Camera::GetNormalizationScale(460, 416));
+
+    DEBUG_EXTRA("Camera model loaded: f %.3fx%.3f; poses %u", camera.K(0, 0), camera.K(1, 1), 99);
+
+    platform.poses.reserve((uint32_t)99);
+
+    for (int i = 0; i < 99; i++)
+    {
+        std::stringstream T_stream;
+        T_stream << dir + "/"
+                 << "poses/" << i + 1 << ".pos";
+        cv::Matx<double, 3, 3> matrix_r;
+        cv::Point3_<double> matrix_t;
+        std::vector<double> t_temp;
+        t_temp.resize(3);
+        std::ifstream in_file;
+
+        //
+        in_file.open(T_stream.str());
+        if (!in_file.is_open())
+        {
+            return false;
+        }
+        //
+        std::string line;
+        int row = 0;
+        while (std::getline(in_file, line))
+        {
+            std::istringstream iss(line);
+            double value;
+            int col = 0;
+            // 在每一行中，读取4个浮点数
+            while (iss >> value)
+            {
+                if (col == 3)
+                {
+                    t_temp[row] = value;
+                    break;
+                }
+                if (col < 3)
+                {
+                    matrix_r(row, col++) = value;
+                }
+
+                // 如果已经读取了4个值，退出循环
+            }
+            row++;
+            // 如果已经读取了4行，退出循环
+            if (row == 3)
+            {
+                break;
+            }
+        }
+        matrix_t.x = t_temp[0];
+        matrix_t.y = t_temp[1];
+        matrix_t.z = t_temp[2];
+
+        Platform::Pose &pose = platform.poses.emplace_back();
+        pose.R               = matrix_r.t();
+        pose.C               = matrix_t;
+        in_file.close();
+    }
+#endif
 
     // import images
+#if 0
     nCalibratedImages = 0;
     size_t nTotalPixels(0);
-    ASSERT(!obj.images.empty());
-    images.reserve((uint32_t)obj.images.size());
-    for (const Interface::Image &image : obj.images)
+    // ASSERT(!obj.images.empty());
+    images.reserve((uint32_t)read_matrix_r.size());
+
+    // int num         = 0;
+
+    // for (const Interface::Image &image : obj.images)
+    for (int i = 0; i < read_matrix_r.size(); i++)
     {
-        const uint32_t ID(images.size());
+        // const uint32_t ID(images.size());
         Image &imageData = images.emplace_back();
-        imageData.ID     = (image.ID == NO_ID ? ID : image.ID);
-        imageData.name   = image.name;
-        Util::ensureUnifySlash(imageData.name);
-        imageData.name = MAKE_PATH_FULL(WORKING_FOLDER_FULL, imageData.name);
-        if (!image.maskName.empty())
+        imageData.ID     = i;
+        // std::stringstream stream;
+        // stream << dir + "/" << i << "_color.JPG";
+        //  cv::Mat aaa = cv::imread(stream.str(), cv::IMREAD_COLOR);
+        imageData.name = i;
+        // Util::ensureUnifySlash(imageData.name);
+
+        // imageData.name = MAKE_PATH_FULL(WORKING_FOLDER_FULL, imageData.name);
+        //     imageData.load
+        imageData.poseID = i;
+        // imageData.ReloadImage(960);
+        std::stringstream stream;
+        stream << dir + "/" << i << "_color.JPG";
+        cv::Mat aaa = cv::imread(stream.str(), cv::IMREAD_COLOR);
+        imageData.image.create(832, 960);
+        void *pDst = imageData.image.data;
+        void *pSrc = aaa.data;
+        for (int j = 0; j < 960 * 832; ++j, (uint8_t *&)pDst += 3, (uint8_t *&)pSrc += 3)
         {
-            imageData.maskName = image.maskName;
-            Util::ensureUnifySlash(imageData.maskName);
-            imageData.maskName = MAKE_PATH_FULL(WORKING_FOLDER_FULL, imageData.maskName);
+            ((uint8_t *)pDst)[0] = ((uint8_t *)pSrc)[0];
+            ((uint8_t *)pDst)[1] = ((uint8_t *)pSrc)[1];
+            ((uint8_t *)pDst)[2] = ((uint8_t *)pSrc)[2];
         }
-        imageData.poseID = image.poseID;
-        if (imageData.poseID == NO_ID)
-        {
-            DEBUG_EXTRA("warning: uncalibrated image '%s'", image.name.c_str());
-            continue;
-        }
-        imageData.platformID = image.platformID;
-        imageData.cameraID   = image.cameraID;
-        // init camera
-        const Interface::Platform::Camera &camera = obj.platforms[image.platformID]
-                                                        .cameras[image.cameraID];
-        if (camera.HasResolution())
+
+        imageData.platformID = 0;
+        imageData.cameraID   = 0;
+
+        //  init camera
         {
             // use stored resolution
-            imageData.width  = camera.width;
-            imageData.height = camera.height;
+            imageData.width  = 960;
+            imageData.height = 832;
             imageData.scale  = 1;
-        }
-        else
-        {
-            // read image header for resolution
-            if (!imageData.ReloadImage(0, false))
-                return false;
         }
         imageData.UpdateCamera(platforms);
         // init neighbors
-        imageData.neighbors.CopyOf(image.viewScores.data(), (uint32_t)image.viewScores.size());
-        imageData.avgDepth = image.avgDepth;
+        // imageData.neighbors.CopyOf(image.viewScores.data(), (uint32_t)image.viewScores.size());
+        // imageData.avgDepth = image.avgDepth;
         ++nCalibratedImages;
         nTotalPixels += imageData.width * imageData.height;
-        DEBUG_ULTIMATE("Image loaded %3u: %s", ID, Util::getFileNameExt(imageData.name).c_str());
+        DEBUG_ULTIMATE("Image loaded %3u: %s", 1, Util::getFileNameExt(imageData.name).c_str());
     }
-    if (images.size() < 2)
-        return false;
+#else
+    nCalibratedImages = 0;
+    size_t nTotalPixels(0);
+    ASSERT(!obj.images.empty());
+    images.reserve((uint32_t)99);
 
-    // import 3D points
-    if (!obj.vertices.empty())
+    // int num         = 0;
+
+    // for (const Interface::Image &image : obj.images)
+    for (int i = 0; i < 99; i++)
     {
-        bool bValidWeights(false);
-        pointcloud.points.resize(obj.vertices.size());
-        pointcloud.pointViews.resize(obj.vertices.size());
-        pointcloud.pointWeights.resize(obj.vertices.size());
-        FOREACH(i, pointcloud.points)
-        {
-            const Interface::Vertex &vertex = obj.vertices[i];
-            PointCloud::Point &point        = pointcloud.points[i];
-            point                           = vertex.X;
-            PointCloud::ViewArr &views      = pointcloud.pointViews[i];
-            views.resize((PointCloud::ViewArr::IDX)vertex.views.size());
-            PointCloud::WeightArr &weights = pointcloud.pointWeights[i];
-            weights.resize((PointCloud::ViewArr::IDX)vertex.views.size());
-            CLISTDEF0(PointCloud::ViewArr::IDX) indices(views.size());
-            std::iota(indices.begin(), indices.end(), 0);
-            std::sort(indices.begin(),
-                      indices.end(),
-                      [&](IndexArr::Type i0, IndexArr::Type i1) -> bool
-                      {
-                          return vertex.views[i0].imageID < vertex.views[i1].imageID;
-                      });
-            ASSERT(vertex.views.size() >= 2);
-            views.ForEach(
-                [&](PointCloud::ViewArr::IDX v)
-                {
-                    const Interface::Vertex::View &view = vertex.views[indices[v]];
-                    views[v]                            = view.imageID;
-                    weights[v]                          = view.confidence;
-                    if (view.confidence != 0)
-                        bValidWeights = true;
-                });
-        }
-        if (!bValidWeights)
-            pointcloud.pointWeights.Release();
-        if (!obj.verticesNormal.empty())
-        {
-            ASSERT(obj.vertices.size() == obj.verticesNormal.size());
-            pointcloud.normals.CopyOf((const Point3f *)&obj.verticesNormal[0].n, obj.vertices.size());
-        }
-        if (!obj.verticesColor.empty())
-        {
-            ASSERT(obj.vertices.size() == obj.verticesColor.size());
-            pointcloud.colors.CopyOf((const Pixel8U *)&obj.verticesColor[0].c, obj.vertices.size());
-        }
-    }
+        // const uint32_t ID(images.size());
+        Image &imageData = images.emplace_back();
+        imageData.ID     = i;
+        // std::stringstream stream;
+        // stream << dir + "/" << i << "_color.JPG";
+        //  cv::Mat aaa = cv::imread(stream.str(), cv::IMREAD_COLOR);
+        imageData.name = i;
+        // Util::ensureUnifySlash(imageData.name);
 
+        // imageData.name = MAKE_PATH_FULL(WORKING_FOLDER_FULL, imageData.name);
+        //     imageData.load
+        imageData.poseID = i;
+        // imageData.ReloadImage(960);
+        std::stringstream stream;
+        stream << dir + "/imgs/" << i + 1 << "_color.BMP";
+        cv::Mat aaa = cv::imread(stream.str(), cv::IMREAD_COLOR);
+        imageData.image.create(416, 480);
+        void *pDst = imageData.image.data;
+        void *pSrc = aaa.data;
+        for (int j = 0; j < 416 * 480; ++j, (uint8_t *&)pDst += 3, (uint8_t *&)pSrc += 3)
+        {
+            ((uint8_t *)pDst)[0] = ((uint8_t *)pSrc)[0];
+            ((uint8_t *)pDst)[1] = ((uint8_t *)pSrc)[1];
+            ((uint8_t *)pDst)[2] = ((uint8_t *)pSrc)[2];
+        }
+
+        imageData.platformID = 0;
+        imageData.cameraID   = 0;
+
+        //  init camera
+        {
+            // use stored resolution
+            imageData.width  = 480;
+            imageData.height = 416;
+            imageData.scale  = 1;
+        }
+        imageData.UpdateCamera(platforms);
+        // init neighbors
+        // imageData.neighbors.CopyOf(image.viewScores.data(), (uint32_t)image.viewScores.size());
+        // imageData.avgDepth = image.avgDepth;
+        ++nCalibratedImages;
+        nTotalPixels += imageData.width * imageData.height;
+        DEBUG_ULTIMATE("Image loaded %3u: %s", 1, Util::getFileNameExt(imageData.name).c_str());
+    }
+#endif
     // import region of interest
-    obb.Set(Matrix3x3f(obj.obb.rot), Point3f(obj.obb.ptMin), Point3f(obj.obb.ptMax));
+    // 暂时这边输入的是单位矩阵，其他两个都是0
+    // obb.Set(Matrix3x3f(obj.obb.rot), Point3f(obj.obb.ptMin), Point3f(obj.obb.ptMax));
 
     DEBUG_EXTRA("Scene loaded from interface format (%s):\n"
                 "\t%u images (%u calibrated) with a total of %.2f MPixels (%.2f MPixels/image)\n"
@@ -619,7 +709,6 @@ Scene::SCENE_TYPE Scene::Load(const String &fileName, bool bImport)
     TD_TIMER_STARTD();
     Release();
 
-#ifdef _USE_BOOST
     // open the input stream
     std::ifstream fs(fileName, std::ios::in | std::ios::binary);
     if (!fs.is_open())
@@ -627,48 +716,22 @@ Scene::SCENE_TYPE Scene::Load(const String &fileName, bool bImport)
     // load project header ID
     char szHeader[4];
     fs.read(szHeader, 4);
-    //DEBUG_EXTRA("11111 \n");
+    // DEBUG_EXTRA("11111 \n");
     if (!fs || _tcsncmp(szHeader, PROJECT_ID, 4) != 0)
     {
         fs.close();
+
         if (LoadInterface(fileName))
             DEBUG_EXTRA("2222 \n");
+        return SCENE_INTERFACE;
 
-            return SCENE_INTERFACE;
         VERBOSE("error: invalid project");
         return SCENE_NA;
     }
-    // load project version
-    uint32_t nVer;
-    fs.read((char *)&nVer, sizeof(uint32_t));
-    if (!fs || nVer != PROJECT_VER)
-    {
-        VERBOSE("error: different project version");
-        return SCENE_NA;
-    }
-    // load stream type
-    uint32_t nType;
-    fs.read((char *)&nType, sizeof(uint32_t));
-    // skip reserved bytes
-    uint64_t nReserved;
-    fs.read((char *)&nReserved, sizeof(uint64_t));
-    // serialize in the current state
-    if (!SerializeLoad(*this, fs, (ARCHIVE_TYPE)nType))
-        //printf("3");
 
-        return SCENE_NA;
     // init images
-    nCalibratedImages = 0;
     size_t nTotalPixels(0);
-    FOREACH(ID, images)
-    {
-        Image &imageData = images[ID];
-        if (imageData.poseID == NO_ID)
-            continue;
-        imageData.UpdateCamera(platforms);
-        ++nCalibratedImages;
-        nTotalPixels += imageData.width * imageData.height;
-    }
+
     DEBUG_EXTRA("Scene loaded (%s):\n"
                 "\t%u images (%u calibrated) with a total of %.2f MPixels (%.2f MPixels/image)\n"
                 "\t%u points, %u vertices, %u faces",
@@ -681,13 +744,7 @@ Scene::SCENE_TYPE Scene::Load(const String &fileName, bool bImport)
                 mesh.vertices.GetSize(),
                 mesh.faces.GetSize());
     return SCENE_MVS;
-#else
-    if (bImport && Import(fileName))
-        return SCENE_IMPORT;
-    if (LoadInterface(fileName))
-        return SCENE_INTERFACE;
-    return SCENE_NA;
-#endif
+
 } // Load
 
 bool Scene::Save(const String &fileName, ARCHIVE_TYPE type) const
