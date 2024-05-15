@@ -1,4 +1,28 @@
 ﻿  SceneTexture.cpp
-F:\mcs2\openMVS\libs\MVS\SceneTexture.cpp(787,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-F:\mcs2\openMVS\libs\MVS\SceneTexture.cpp(2185,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+F:\mcs2\openMVS\libs\MVS\SceneTexture.cpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“SceneTexture.cpp”)
+  
+F:\mcs2\openMVS\libs\MVS\SceneTexture.cpp(780,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“SceneTexture.cpp”)
+  
+F:\mcs2\openMVS\libs\MVS\SceneTexture.cpp(1442,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“SceneTexture.cpp”)
+  
+F:\mcs2\openMVS\libs\MVS\SceneTexture.cpp(2133,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“SceneTexture.cpp”)
+  
+F:\mcs2\openMVS\libs\MVS\SceneTexture.cpp(2687,89): warning C4244: “参数”: 从“_Tp”转换到“int”，可能丢失数据
+F:\mcs2\openMVS\libs\MVS\SceneTexture.cpp(2687,89): warning C4244:         with
+F:\mcs2\openMVS\libs\MVS\SceneTexture.cpp(2687,89): warning C4244:         [
+F:\mcs2\openMVS\libs\MVS\SceneTexture.cpp(2687,89): warning C4244:             _Tp=float
+F:\mcs2\openMVS\libs\MVS\SceneTexture.cpp(2687,89): warning C4244:         ]
+  (编译源文件“SceneTexture.cpp”)
+  
+F:\mcs2\openMVS\libs\MVS\SceneTexture.cpp(2687,77): warning C4244: “参数”: 从“_Tp”转换到“int”，可能丢失数据
+F:\mcs2\openMVS\libs\MVS\SceneTexture.cpp(2687,77): warning C4244:         with
+F:\mcs2\openMVS\libs\MVS\SceneTexture.cpp(2687,77): warning C4244:         [
+F:\mcs2\openMVS\libs\MVS\SceneTexture.cpp(2687,77): warning C4244:             _Tp=float
+F:\mcs2\openMVS\libs\MVS\SceneTexture.cpp(2687,77): warning C4244:         ]
+  (编译源文件“SceneTexture.cpp”)
+  
   MVS.vcxproj -> F:\mcs2\openMVS\lib\vc17\x64\RelWithDebInfo\MVS.lib

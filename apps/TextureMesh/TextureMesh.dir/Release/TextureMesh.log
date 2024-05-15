@@ -1,4 +1,24 @@
-﻿    正在创建库 F:/mcs2/openMVS/bin/vc17/x64/Release/TextureMesh.lib 和对象 F:/mcs2/openMVS/bin/vc17/x64/Release/TextureMesh.exp
+﻿  TextureMesh.cpp
+F:\mcs2\openMVS\vcpkg_installed\x64-windows\include\Eigen\src\Core\arch\Default\Half.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“TextureMesh.cpp”)
+  
+F:\mcs2\openMVS\vcpkg_installed\x64-windows\include\Eigen\src\Core\arch\Default\BFloat16.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“TextureMesh.cpp”)
+  
+F:\mcs2\openMVS\vcpkg_installed\x64-windows\include\Eigen\src\Core\arch\Default\GenericPacketMathFunctions.h(676,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“TextureMesh.cpp”)
+  
+F:\mcs2\openMVS\libs\Common\Types.inl(2495,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“TextureMesh.cpp”)
+  
+F:\mcs2\openMVS\vcpkg_installed\x64-windows\include\boost\iostreams\filter\zstd.hpp(94,32): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+  (编译源文件“TextureMesh.cpp”)
+  
+F:\mcs2\openMVS\libs\IO\OBJ.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“TextureMesh.cpp”)
+  
+F:\mcs2\openMVS\apps\TextureMesh\TextureMesh.cpp(255,5): warning C4102: “ProjectOrtho”: 未引用的标签
+    正在创建库 F:/mcs2/openMVS/bin/vc17/x64/Release/TextureMesh.lib 和对象 F:/mcs2/openMVS/bin/vc17/x64/Release/TextureMesh.exp
   正在生成代码
   已完成代码的生成
   TextureMesh.vcxproj -> F:\mcs2\openMVS\bin\vc17\x64\Release\TextureMesh.exe

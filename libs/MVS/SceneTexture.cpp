@@ -737,6 +737,13 @@ bool MeshTexture::ListCameraFaces(FaceDataViewArr &facesDatas,
             //				ON GLOSS IMAGES it happens to have a high volatile sharpness depending on how
             // the light reflects under different angles
             // + angle: low angle increases the surface area
+            // 前提是同一个视角，即一张图片下的
+            // 1 facemap上为每个像素对应的面序号
+            // 2 如果facemap上的面序号存在，每遍历一次将这个面的区域area+1，
+            // 3 如果面序号对应的区域已被赋值（即2），判断对应的是不是同一个图片。
+            //   是的话累加quality（灰度图的像素值）和color（彩色图的像素值）
+            // 面对应的view，quality，color全部存储在faceData
+            // 最后全部view遍历完，faceDatas存储的是每个面对应的所有视角及其质量颜色
             for (int j = 0; j < faceMap.rows; ++j)
             {
                 for (int i = 0; i < faceMap.cols; ++i)
@@ -744,6 +751,9 @@ bool MeshTexture::ListCameraFaces(FaceDataViewArr &facesDatas,
                     const FIndex &idxFace = faceMap(j, i);
                     ASSERT((idxFace == NO_ID && depthMap(j, i) == 0)
                            || (idxFace != NO_ID && depthMap(j, i) > 0));
+                    // std::cout << "idxFACE:" << faceMap(j, i) << std::endl;
+                    // std::cout << "NO_ID:" << NO_ID << std::endl;
+
                     if (idxFace == NO_ID)
                         continue;
                     FaceDataArr &faceDatas = facesDatas[idxFace];
@@ -779,6 +789,9 @@ bool MeshTexture::ListCameraFaces(FaceDataViewArr &facesDatas,
             // adjust face quality with camera angle relative to face normal
             // tries to increase chances of a camera with perpendicular view on the surface
             // (smoothened normals) to be selected
+            // 计算向量1（相机坐标原点-面中心的）与向量2（面的法向量）的夹角
+            // 面的质量为夹角与原来质量的乘积，相当于角度越正视，评分越高
+            // 这里计算的是每个面在当前视角的质量评分
             FOREACH(idxFace, facesDatas)
             {
                 FaceDataArr &faceDatas = facesDatas[idxFace];
@@ -792,6 +805,7 @@ bool MeshTexture::ListCameraFaces(FaceDataViewArr &facesDatas,
                 faceDatas.back().quality *= SQUARE(cosFaceCam);
             }
 #if TEXOPT_FACEOUTLIER != TEXOPT_FACEOUTLIER_NA
+            // 针对当前视角下的所有面的颜色，取所有面对对应像素的均值
             FOREACH(idxFace, areas)
             {
                 const uint32_t &area = areas[idxFace];
@@ -817,7 +831,7 @@ bool MeshTexture::ListCameraFaces(FaceDataViewArr &facesDatas,
 #if TEXOPT_FACEOUTLIER != TEXOPT_FACEOUTLIER_NA
     if (fOutlierThreshold > 0)
     {
-        // try to detect outlier views for each face
+        // 用于检测每个face的异常视图，可以再后续自定义函数用于排除过曝等视角的影响
         // (views for which the face is occluded by a dynamic object in the scene, ex. pedestrians)
         for (FaceDataArr &faceDatas : facesDatas)
             FaceOutlierDetection(faceDatas, fOutlierThreshold);
@@ -1270,7 +1284,8 @@ bool MeshTexture::FaceViewSelection(unsigned minCommonCameras,
         // compute face normals and smoothen them
         scene.mesh.SmoothNormalFaces();
 
-        // list all views for each face
+        // 每个face所对应的所有视角
+        // facesDatas为face_size大小，每个元素为每个面所对应的所有视角的质量，颜色等
         FaceDataViewArr facesDatas;
         if (!ListCameraFaces(facesDatas, fOutlierThreshold, nIgnoreMaskLabel, views))
             return false;
@@ -1315,26 +1330,32 @@ bool MeshTexture::FaceViewSelection(unsigned minCommonCameras,
         ASSERT((Mesh::FIndex)boost::num_vertices(graph) == faces.size());
 
         // start patch creation starting directly from individual faces
+        // 从单独face中开始创建face群path
         {
             // assign the best view to each face
             labels.resize(faces.size());
             {
                 // normalize quality values
                 float maxQuality(0);
+                // 找到所有面中所有视角的最大质量maxQuality
                 for (const FaceDataArr &faceDatas : facesDatas)
                 {
                     for (const FaceData &faceData : faceDatas)
                         if (maxQuality < faceData.quality)
                             maxQuality = faceData.quality;
                 }
+                // 设置直方图0-maxQuality范围，千等分，用于每个仓的计数
                 Histogram32F hist(std::make_pair(0.f, maxQuality), 1000);
+                // 将每个面所对应的所有面的质量放入直方图每个仓中，并对每个仓进行计数
                 for (const FaceDataArr &faceDatas : facesDatas)
                 {
                     for (const FaceData &faceData : faceDatas)
                         hist.Add(faceData.quality);
                 }
+                // 返回0.95-1的上边界，即0-normQuality中仓的计数量占比大于0.95
                 const float normQuality(hist.GetApproximatePermille(0.95f));
 
+                // LBP算法
 #if TEXOPT_INFERENCE == TEXOPT_INFERENCE_LBP
                 // initialize inference structures
                 const LBPInference::EnergyType MaxEnergy(fRatioDataSmoothness
@@ -1347,10 +1368,17 @@ bool MeshTexture::FaceViewSelection(unsigned minCommonCameras,
                     EdgeOutIter ei, eie;
                     FOREACH(f, faces)
                     {
+                        // boost::out_edges(f, graph)为当前面对应的出边集合
+                        // ei为当前迭代的边的迭代器，eie为边迭代器结束的哨兵值
                         for (boost::tie(ei, eie) = boost::out_edges(f, graph); ei != eie; ++ei)
                         {
+                            // 确保当前面所对应的顶点为当前边ei的源顶点
                             ASSERT(f == (FIndex)ei->m_source);
+                            // 获取当前边对应的目标顶点
                             const FIndex fAdj((FIndex)ei->m_target);
+                            // 判断当前面序号是否小于邻接面序号
+                            // 以确保每对相邻面只被添加一次
+                            // SetNeighbors时将邻接面对设置为2对有向边放在edges中
                             if (f < fAdj) // add edges only once
                                 inference.SetNeighbors(f, fAdj);
                         }
@@ -1360,15 +1388,18 @@ bool MeshTexture::FaceViewSelection(unsigned minCommonCameras,
                 }
 
                 // set data costs for all labels (except label 0 - undefined)
+                // 为所有面设置数据成本dataCost
                 FOREACH(f, facesDatas)
                 {
                     const FaceDataArr &faceDatas = facesDatas[f];
                     for (const FaceData &faceData : faceDatas)
                     {
+                        // 面的标签为其面序号+1（为了防止使用lable0，0为未定义）
                         const Label label((Label)faceData.idxView + 1);
                         const float normalizedQuality(faceData.quality >= normQuality
                                                           ? 1.f
                                                           : faceData.quality / normQuality);
+                        // 数据质量dataCost，其归一化质量较高，则其数据代价较低
                         const float dataCost((1.f - normalizedQuality) * MaxEnergy);
                         inference.SetDataCost(label, f, dataCost);
                     }
@@ -1490,6 +1521,10 @@ bool MeshTexture::FaceViewSelection(unsigned minCommonCameras,
         // create texture patches
         {
             // divide graph in sub-graphs of connected faces having the same label
+            // 将图（graph）中的边（edges）分成两部分：
+            // 一部分是连接相同标签的面（faces）的边，
+            // 另一部分是连接不同标签的面的边（这些边被认为是“接缝”边，即seamEdges）
+            // 并在图中移除接缝边
             EdgeIter ei, eie;
             const PairIdxArr::IDX startLabelSeamEdges(seamEdges.size());
             for (boost::tie(ei, eie) = boost::edges(graph); ei != eie; ++ei)
@@ -1507,12 +1542,17 @@ bool MeshTexture::FaceViewSelection(unsigned minCommonCameras,
                 boost::remove_edge(pEdge->i, pEdge->j, graph);
 
             // find connected components: texture patches
+            // 识别无向图中连通分量
+            // components输出的是每个面对应的第几个连通分量
+            // nComponents为总共有多少个连通分量
             ASSERT((FIndex)boost::num_vertices(graph) == faces.size());
             components.resize(faces.size());
             const FIndex nComponents(boost::connected_components(graph, components.data()));
 
             // create texture patches;
             // last texture patch contains all faces with no texture
+            // 将相同连接分量的所有面放在一起，一个texturePatch中
+            // texturePatches的大小为连通分量的个数
             LabelArr sizes(nComponents);
             sizes.Memset(0);
             FOREACH(c, components)
@@ -2449,12 +2489,12 @@ void MeshTexture::GenerateTexture(bool bGlobalSeamLeveling,
         CreateSeamVertices();
 
         // perform global seam leveling
-        /*   if (bGlobalSeamLeveling)
-           {
-               TD_TIMER_STARTD();
-               GlobalSeamLeveling();
-               DEBUG_ULTIMATE("\tglobal seam leveling completed (%s)", TD_TIMER_GET_FMT().c_str());
-           }*/
+        if (bGlobalSeamLeveling)
+        {
+            TD_TIMER_STARTD();
+            GlobalSeamLeveling();
+            DEBUG_ULTIMATE("\tglobal seam leveling completed (%s)", TD_TIMER_GET_FMT().c_str());
+        }
 
         // perform local seam leveling
         if (bLocalSeamLeveling)
@@ -2465,7 +2505,7 @@ void MeshTexture::GenerateTexture(bool bGlobalSeamLeveling,
         }
     }
 
-    // 将对应相同图片且能包含的patch进行融合，并将小path中的坐标变到大patch上
+    // 将对应相同图片且能包含的patch进行融合，并将小patch中的坐标变到大patch上
     for (unsigned i = 0; i < texturePatches.size() - 1; ++i)
     {
         TexturePatch &texturePatchBig = texturePatches[i];
@@ -2512,6 +2552,7 @@ void MeshTexture::GenerateTexture(bool bGlobalSeamLeveling,
         }
 
         // pack patches: one pack per texture file
+        // 最后获得的newPlacedRects为矩阵位置，大小，及其对应的pathid
         CLISTDEF2IDX(RectsBinPack::RectWIdxArr, TexIndex) placedRects;
         {
             // increase texture size till all patches fit
@@ -2614,6 +2655,9 @@ void MeshTexture::GenerateTexture(bool bGlobalSeamLeveling,
                 if (texturePatch.label != NO_ID)
                 {
                     const Image &imageData = images[texturePatch.label];
+                    /*           std::cout << "label:" << texturePatch.label << std::endl;
+                               std::cout << texturePatch.rect << std::endl;
+                               cv::Mat temp(imageData.image);*/
                     cv::Mat patch(imageData.image(texturePatch.rect));
                     if (rect.width != texturePatch.rect.width)
                     {
@@ -2624,6 +2668,8 @@ void MeshTexture::GenerateTexture(bool bGlobalSeamLeveling,
                     }
                     patch.copyTo(texturesDiffuse[idxTexture](rect));
                 }
+
+                cv::Mat diffuse(texturesDiffuse[idxTexture]);
                 // compute final texture coordinates
                 const TexCoord offset(rect.tl());
                 for (const FIndex idxFace : texturePatch.faces)
@@ -2635,6 +2681,19 @@ void MeshTexture::GenerateTexture(bool bGlobalSeamLeveling,
                         TexCoord &texcoord = texcoords[v];
                         // std::cout << "x:" << offset.x << " y:" << offset.y << std::endl;
                         texcoord = TexCoord(texcoord[x] + offset.x, texcoord[y] + offset.y);
+                        std::cout << "textcoord x: " << texcoord.x << "textcoord y: " << texcoord.y
+                                  << std::endl;
+
+                        cv::Vec3b coord_coloe(diffuse.at<cv::Vec3b>(texcoord.y, texcoord.x));
+                        std::cout << "color 1: " << coord_coloe[0] << "color 2:" << coord_coloe[1]
+                                  << "color 3: " << coord_coloe[2] << std::endl;
+                        cv::Vec3b black(colEmpty.b, colEmpty.g, colEmpty.r);
+                        // if (diffuse.at<uchar>(texcoord.x, texcoord.y)
+                        if (coord_coloe == black)
+                        {
+                            std::cout << "blank textcoord x: " << texcoord.x << std::endl;
+                            std::cout << " blank textcoord y: " << texcoord.y << std::endl;
+                        }
                     }
                 }
             }

@@ -182,7 +182,7 @@ void MVS::DecomposeProjectionMatrix(const PMatrix &P, RMatrix &R, CMatrix &C)
 void MVS::AssembleProjectionMatrix(const KMatrix &K, const RMatrix &R, const CMatrix &C, PMatrix &P)
 {
     // compute temporary matrices
-    std::cout << "P_K:" << K << std::endl;
+    // std::cout << "P_K:" << K << std::endl;
 
     cv::Mat mP(3, 4, cv::DataType<REAL>::type, const_cast<REAL *>(P.val));
     cv::Mat M(mP, cv::Rect(0, 0, 3, 3));

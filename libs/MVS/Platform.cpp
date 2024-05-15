@@ -46,13 +46,13 @@ Platform::Camera Platform::GetCamera(uint32_t cameraID, uint32_t poseID) const
     // add the relative camera pose to the platform
     Camera cam;
     cam.K = camera.K;
-    std::cout << "k:" << cam.K << std::endl;
+    // std::cout << "k:" << cam.K << std::endl;
 
     cam.R = camera.R * pose.R;
-    std::cout << "cameraR:" << camera.R << " poserR:" << pose.R << std::endl;
-    std::cout << "camR:" << cam.R << std::endl;
+    // std::cout << "cameraR:" << camera.R << " poserR:" << pose.R << std::endl;
+    // std::cout << "camR:" << cam.R << std::endl;
     cam.C = pose.R.t() * camera.C + pose.C;
-    std::cout << "camC:" << cam.C << std::endl;
+    // std::cout << "camC:" << cam.C << std::endl;
 
     return cam;
 } // GetCamera

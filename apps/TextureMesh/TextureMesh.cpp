@@ -73,7 +73,7 @@ bool Application::Initialize(size_t argc, LPCTSTR *argv)
     // validate input
     OPT::strExportType   = _T(".ply");
     OPT::nArchiveType    = ARCHIVE_MVS;
-    OPT::strMeshFileName = "D:/texture_data/result.ply";
+    OPT::strMeshFileName = "D:/texture_data/tooth1.ply";
     // OPT::strMeshFileName = "E:/OpenMVS_Windows_x64/scene_dense_mesh_refine.ply";
 
     OPT::minCommonCameras      = 0;

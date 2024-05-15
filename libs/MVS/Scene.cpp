@@ -126,8 +126,10 @@ bool Scene::LoadInterface(const String &fileName)
     // 从文件中加载相机位姿
     std::string dir = "D:/texture_data";
     std::stringstream k_stream;
+    // k_stream << dir + "/"
+    //          << "calib/graycam_params.yml";
     k_stream << dir + "/"
-             << "calib/graycam_params.yml";
+             << "calib_tooth1/graycam_params.yml";
     cv::Matx<double, 3, 3> cam_k;
     cv::FileStorage fsRead(k_stream.str(), cv::FileStorage::READ);
     fsRead["cam_matrix"] >> cam_k;
@@ -143,15 +145,17 @@ bool Scene::LoadInterface(const String &fileName)
     camera.K = cam_k;
     camera.K = camera.GetScaledK(REAL(1) / Camera::GetNormalizationScale(460, 416));
 
-    DEBUG_EXTRA("Camera model loaded: f %.3fx%.3f; poses %u", camera.K(0, 0), camera.K(1, 1), 99);
+    DEBUG_EXTRA("Camera model loaded: f %.3fx%.3f; poses %u", camera.K(0, 0), camera.K(1, 1), 563);
 
-    platform.poses.reserve((uint32_t)99);
+    platform.poses.reserve((uint32_t)563);
 
-    for (int i = 0; i < 99; i++)
+    for (int i = 0; i < 563; i++)
     {
         std::stringstream T_stream;
+        // T_stream << dir + "/"
+        //          << "poses_o/" << i + 1 << ".pos";
         T_stream << dir + "/"
-                 << "poses/" << i + 1 << ".pos";
+                 << "poses_tooth1/" << i << ".txt";
         cv::Matx<double, 3, 3> matrix_r;
         cv::Point3_<double> matrix_t;
         std::vector<double> t_temp;
@@ -200,7 +204,9 @@ bool Scene::LoadInterface(const String &fileName)
 
         Platform::Pose &pose = platform.poses.emplace_back();
         pose.R               = matrix_r.t();
-        pose.C               = matrix_t;
+        // pose.R = matrix_r;
+
+        pose.C = matrix_t;
         in_file.close();
     }
 #endif
@@ -265,12 +271,12 @@ bool Scene::LoadInterface(const String &fileName)
     nCalibratedImages = 0;
     size_t nTotalPixels(0);
     ASSERT(!obj.images.empty());
-    images.reserve((uint32_t)99);
+    images.reserve((uint32_t)563);
 
     // int num         = 0;
 
     // for (const Interface::Image &image : obj.images)
-    for (int i = 0; i < 99; i++)
+    for (int i = 0; i < 563; i++)
     {
         // const uint32_t ID(images.size());
         Image &imageData = images.emplace_back();
@@ -286,7 +292,9 @@ bool Scene::LoadInterface(const String &fileName)
         imageData.poseID = i;
         // imageData.ReloadImage(960);
         std::stringstream stream;
-        stream << dir + "/imgs/" << i + 1 << "_color.BMP";
+        // stream << dir + "/imgs/" << i + 1 << "_color.BMP";
+        stream << dir + "/imgs_tooth1/" << i << "_color.BMP";
+
         cv::Mat aaa = cv::imread(stream.str(), cv::IMREAD_COLOR);
         imageData.image.create(416, 480);
         void *pDst = imageData.image.data;
